@@ -27,12 +27,7 @@ and open the template in the editor.
             <tr><td align='center'><a href='frameslevel3.php'><h2>Level 3</h2></a></td></tr>
             <tr><td align='center'><a href='frameslevel4.php'><h2>Level 4</h2></a></td></tr>
             <tr><td align='center'><a href='frameslevel5.php'><h2>Level 5</h2></a></td></tr>
-            <tr><td align='center'><a href='frameslevel6.php'><h2>Level 6</h2></a></td></tr>
-            <tr><td align='center'><a href='frameslevel7.php'><h2>Level 7</h2></a></td></tr>
-            <tr><td align='center'><a href='frameslevel8.php'><h2>Level 8</h2></a></td></tr>
-            <tr><td align='center'><a href='frameslevel9.php'><h2>Level 9</h2></a></td></tr>
-            <tr><td align='center'><a href='frameslevel10.php'><h2>Final Level</h2></a></td></tr>
-            
+            <tr><td align='center'><a href='frameslevel10.php'><h2>Final Level</h2></a></td></tr>            
         </table>
     </center>
     </body>
