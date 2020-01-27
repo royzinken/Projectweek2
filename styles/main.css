@@ -24,8 +24,8 @@ body#symbols {
 
 .img1:hover {
     display: block;
-    margin-left: 20%;
-    width: 60%;
+    margin-left: 30%;
+    width: 40%;
 }
 
 td {
@@ -37,6 +37,7 @@ td {
     background: linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
     width: 33.33333%;
+    height: 33.33333%;
 }
 
 #inputpad {
@@ -49,7 +50,16 @@ td {
 }
 
 #finish {
-    border-radius: 50%;
+    border-radius: 40px;
+    background: #333333;
+    background: -moz-linear-gradient(122deg, #333333 0%, #666666, #333333 100%);
+    background: -webkit-linear-gradient(122deg, #333333 0%, #666666 35%, #333333 100%);
+    background: linear-gradient(122deg, #333333 0%, #666666 35%, #333333 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
+}
+
+#pass {
+    border-radius: 40px;
     background: green;
     background: -moz-linear-gradient(122deg, lime 0%, green, lime 100%);
     background: -webkit-linear-gradient(122deg, lime 0%, green 35%, lime 100%);
@@ -57,14 +67,11 @@ td {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
 }
 
-#pass {
+#failed {
+    border-radius: 40px;
     background: lime;
     background: -moz-linear-gradient(122deg, white 0%, lime, white 100%);
     background: -webkit-linear-gradient(122deg, white 0%, lime 35%, white 100%);
     background: linear-gradient(122deg, white 0%, lime 35%, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
-}
-
-#failed {
-    background-color: darkred;
 }
