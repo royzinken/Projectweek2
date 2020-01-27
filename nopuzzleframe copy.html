@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="./styles/main.css" type="text/css" rel="stylesheet">
+        <title>Bomb defusal game</title>        
+    </head>
+    <body background='./images/nopuzzle.png' id="symbols">   
+        <center>     
+            <table id="inputpad">
+                <tr>
+                    <td><img src="./images/symbol 1.png" onclick="clicky(this)" class="img1"></td>
+                    <td><img src="./images/symbol 2.png" onclick="clicky(this)" class="img1"></td>
+                    <td><img src="./images/symbol 3.png" onclick="clicky(this)" class="img1"></td>
+                </tr>
+                <tr>
+                    <td><img src="./images/symbol 4.png" onclick="clicky(this)" class="img1"></td>
+                    <td><img src="./images/symbol 5.png" onclick="clicky(this)" class="img1"></td>
+                    <td><img src="./images/symbol 6.png" onclick="clicky(this)" class="img1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><img src="./images/symbol 7.png" onclick="clicky(this)" class="img1"></td>
+                    <td id="finish"></td>
+                </tr>
+            </table>
+        </center>
+        <script src="./java/sequence 1.js"></script>
+    </body>
+</html>

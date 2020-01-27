@@ -8,5 +8,63 @@ and open the template in the editor.
     Author     : J. de Klijn
 */
 
+body#symbols {
+    background: rgb(204,204,204);
+    background: -moz-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#cccccc",GradientType=1);
+}
 
+.img1 {
+    display: block;
+    margin-left: 40%;
+    width: 20%;
+}
 
+.img1:hover {
+    display: block;
+    margin-left: 20%;
+    width: 60%;
+}
+
+td {
+    border: 2px yellow groove;
+    border-radius: 30px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    width: 33.33333%;
+}
+
+#inputpad {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 90%;
+    height: 90%;
+    border: 4px yellow groove;
+}
+
+#finish {
+    border-radius: 50%;
+    background: green;
+    background: -moz-linear-gradient(122deg, lime 0%, green, lime 100%);
+    background: -webkit-linear-gradient(122deg, lime 0%, green 35%, lime 100%);
+    background: linear-gradient(122deg, lime 0%, green 35%, lime 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
+}
+
+#pass {
+    background: lime;
+    background: -moz-linear-gradient(122deg, white 0%, lime, white 100%);
+    background: -webkit-linear-gradient(122deg, white 0%, lime 35%, white 100%);
+    background: linear-gradient(122deg, white 0%, lime 35%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
+}
+
+#failed {
+    background-color: darkred;
+}
