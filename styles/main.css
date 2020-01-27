@@ -8,5 +8,50 @@ and open the template in the editor.
     Author     : J. de Klijn
 */
 
+/*== Jelle en Rouell CSS ==*/
+.Wire1Jelle{
+    display: flex; 
+    width: 16.67%;
+    background-size:    cover;
+    background-image: url(/images/WireBlue.JPG)   
+}
 
+.Wire2Jelle{
+    display: flex; 
+    width: 33.33%;
+    background-size:    cover;
+    background-image: url(/images/WireGreen.JPG)   
+}
 
+.Wire3Jelle{
+    display: flex; 
+    width: 50%;
+    background-size:    cover;
+    background-image: url(/images/WireOrange.JPG)   
+}
+
+.Wire4Jelle{
+    display: flex; 
+    width: 66.67%;
+    background-size:    cover;
+    background-image: url(/images/WireYellow.JPG)   
+}
+
+.Wire5Jelle{
+    display: flex; 
+    width: 83.33%;
+    background-size:    cover;
+    background-image: url(/images/WireBlue.JPG)   
+}
+
+.Wire6Jelle{
+    display: flex; 
+    width: 100%;
+    background-size:    cover;
+    background-image: url(/images/WirePurple.JPG)   
+}
+
+.row{   
+    display: flex; 
+    width: 100%;
+}
