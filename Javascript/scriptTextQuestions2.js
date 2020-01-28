@@ -17,7 +17,7 @@ function guessAnswer () {
     var answer = document.getElementById("cookie").value;
     
   //IF CORRECT ANSWER
-		if (answer == 'dat') {
+		if (answer == 'dot') {
 			$('#correct').show();
       
   //IF WRONG ANSWER

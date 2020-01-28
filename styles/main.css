@@ -11,16 +11,17 @@ and open the template in the editor.
 
 .DBMN{
     padding-top: 35vh;
-    background: grey;
+    background: gray;
     color: #fff;
   }
-  body.DBMN .entry{
+  .entry{
     font-size: 100%;
+    color: blanchedalmond;
     font-weight: bold;
     width: auto;
   }
    
-  body.DBMN .entry2{
+  .entry2{
     animation-delay: 5s;
     font-size: 100%;
     font-weight: bold;
