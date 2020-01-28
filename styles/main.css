@@ -70,8 +70,8 @@ td {
 #failed {
     border-radius: 40px;
     background: lime;
-    background: -moz-linear-gradient(122deg, white 0%, lime, white 100%);
-    background: -webkit-linear-gradient(122deg, white 0%, lime 35%, white 100%);
-    background: linear-gradient(122deg, white 0%, lime 35%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
+    background: -moz-linear-gradient(122deg, red 0%, darkred, red 100%);
+    background: -webkit-linear-gradient(122deg, red 0%, darkred 35%, red 100%);
+    background: linear-gradient(122deg, red 0%, darkred 35%, red 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="red",endColorstr="red",GradientType=1);
 }
