@@ -7,3 +7,40 @@ and open the template in the editor.
     Created on : 29-jan-2017, 12:02:57
     Author     : J. de Klijn
 */
+/*-------------------------------------------------Javascript--------------------------------------------------*/
+
+.DBMN{
+    padding-top: 35vh;
+    background: grey;
+    color: #fff;
+  }
+  .entry{
+    font-size: 100%;
+    font-weight: bold;
+    width: auto;
+  }
+   
+  .entry2{
+    animation-delay: 5s;
+    font-size: 100%;
+    font-weight: bold;
+    width: auto;
+    
+  }
+   
+  
+  .typed-cursor{
+    opacity: 1;
+    font-size: 300%;
+    animation: blink 0.8s infinite ;
+  }
+          
+  @keyframes blink{
+    0%{
+      opacity: 1}
+    50%{
+      opacity: 0}
+    100%{
+      opacity: 1}
+  }
+  /*---------------------------------------------------end of css for java---------------------------------------------- */
