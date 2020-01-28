@@ -9,6 +9,30 @@ and open the template in the editor.
 */
 
 /*== Jelle en Rouell CSS ==*/
+html,
+body {
+   padding: 0px !important;
+   margin: 0px !important;
+   height: 100% !important;
+}
+
+div {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: 100% 100%; 
+    float: left;
+}
+
+.container{
+    max-width:  calc(100%-30px);
+}
+
+.row{   
+    display: flex; 
+    width: 100%;
+}
+
 .Wire1Jelle{
     display: flex; 
     width: 16.67%;
@@ -16,30 +40,25 @@ and open the template in the editor.
 
 .Wire2Jelle{
     display: flex; 
-    width: 33.33%;
+    width: 16.67%;
 }
 
 .Wire3Jelle{
     display: flex; 
-    width: 50%;
+    width: 16.67%;
 }
 
 .Wire4Jelle{
     display: flex; 
-    width: 66.67%;
+    width: 16.67%;
 }
 
 .Wire5Jelle{
     display: flex; 
-    width: 83.33%;
+    width: 16.67%;
 }
 
 .Wire6Jelle{
     display: flex; 
-    width: 100%;
-}
-
-.row{   
-    display: flex; 
-    width: 100%;
+    width: 16.67%;
 }
