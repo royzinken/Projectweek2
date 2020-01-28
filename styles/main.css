@@ -7,20 +7,20 @@ and open the template in the editor.
     Created on : 29-jan-2017, 12:02:57
     Author     : J. de Klijn
 */
-/*-------------------------------------------------Javascript--------------------------------------------------*/
+/*-------------------------------------------------DBMN--------------------------------------------------*/
 
 .DBMN{
     padding-top: 35vh;
     background: grey;
     color: #fff;
   }
-  .entry{
+  body.DBMN .entry{
     font-size: 100%;
     font-weight: bold;
     width: auto;
   }
    
-  .entry2{
+  body.DBMN .entry2{
     animation-delay: 5s;
     font-size: 100%;
     font-weight: bold;
@@ -29,7 +29,7 @@ and open the template in the editor.
   }
    
   
-  .typed-cursor{
+  body.DBMN .typed-cursor{
     opacity: 1;
     font-size: 300%;
     animation: blink 0.8s infinite ;
@@ -43,4 +43,4 @@ and open the template in the editor.
     100%{
       opacity: 1}
   }
-  /*---------------------------------------------------end of css for java---------------------------------------------- */
+  /*---------------------------------------------------end of css for DBMN---------------------------------------------- */
