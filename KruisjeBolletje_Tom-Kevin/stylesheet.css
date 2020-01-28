@@ -60,7 +60,7 @@ input[type="checkbox"] {
 .btn {
   width: 100%;														/*Width to 100%.*/
   display: inline-block;											/*Display to inline-block.*/
-  background: #000;
+  background: orange;
   color: #fff;
   border-radius: 5px;												/*Set border radius to 5 pixels.*/
   margin-top: 32px;													/*Set margin top to 32 pixels.*/
