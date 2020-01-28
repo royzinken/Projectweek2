@@ -418,7 +418,7 @@ input[id*='-6-x']:checked ~ #board #tile-6 div::before,
 input[id*='-7-x']:checked ~ #board #tile-7 div::before,
 input[id*='-8-x']:checked ~ #board #tile-8 div::before {
   content: "X";
-  background: rgba(0,191,255,0.0);
+  background: lightseagreen;
   color: #89dcf6;
 }
 
