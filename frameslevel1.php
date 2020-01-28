@@ -15,7 +15,11 @@ $_SESSION['NumberOfMistakes'] = 0;
 <!--
 The basic frameset filled with the level 1 components
 -->
-
+<script>
+    fumction next() {
+        getelementbyid("next").url = 
+    }
+</script>
 <frameset cols='21%,*,21%' border='0'>
     <frameset rows='40%,15%,*' border='0'>																				<!-- Left colomn -->
         <frame name='left-top' src='./lefttop.html' noresize scrolling='no'>											<!-- Room: left top frame -->
@@ -29,11 +33,11 @@ The basic frameset filled with the level 1 components
                 <frame name='casing-left' src='./casingborder.html' noresize scrolling='no'>							<!-- Casing: border leftside -->
                 <frameset rows='50%,50%' border='10'>
                     <frame name='center-left-top' src='./countdown.php' noresize scrolling='no'>					<!-- Casing: upper left corner / timer frame -->
-                    <frame name='center-left-bottom' src='./nopuzzleframe copy.html' noresize scrolling='no'>				<!-- Casing: lower left corner / puzzle game 1 -->
+                    <frame name='center-left-bottom' src='./symbol_puzzle.html' noresize scrolling='no'>				<!-- Casing: lower left corner / puzzle game 1 -->
                 </frameset>
                 <frameset rows='50%,50%' border='10'>
                     <frame name='center-middle-top' src='./nopuzzleframe.html' noresize scrolling='no'>					<!-- Casing: center top / puzzle game 2 -->
-                    <frame name='center-middle-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: center bottom / puzzle frame 3 -->
+                    <frame id="next" name='test' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: center bottom / puzzle frame 3 -->
                 </frameset>
                 <frameset rows='50%,50%' border='10'>
                     <frame name='center-right-top' src='./nopuzzleframe.html' noresize scrolling='no'>					<!-- Casing: upper right corner / puzzle frame 4 -->

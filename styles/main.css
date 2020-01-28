@@ -23,13 +23,11 @@ body#symbols .img {
 }
 
 body#symbols .img:hover {
-    display: block;
-    margin-left: 30%;
-    width: 40%;
+    animation: hovering 1s forwards infinite;
 }
 
 body#symbols td {
-    border: 2px yellow groove;
+    border: 2px darkgray groove;
     border-radius: 30px;
     background: rgb(255,255,255);
     background: -moz-linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
@@ -43,13 +41,14 @@ body#symbols td {
 body#symbols #inputpad {
     position: fixed;
     bottom: 5%;
-    right: 5%;
+    left: 5%;
     width: 90%;
     height: 90%;
-    border: 4px yellow groove;
+    border: 4px darkgray groove;
+    border-radius: 15px;
 }
 
-body#symbols #finish {
+body#symbols #check {
     border-radius: 40px;
     background: #333333;
     background: -moz-linear-gradient(122deg, #333333 0%, #666666, #333333 100%);
@@ -74,4 +73,19 @@ body#symbols #failed {
     background: -webkit-linear-gradient(122deg, red 0%, darkred 35%, red 100%);
     background: linear-gradient(122deg, red 0%, darkred 35%, red 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="red",endColorstr="red",GradientType=1);
+}
+
+@keyframes hovering {
+    0%{
+        margin-left: 40%;
+        width: 20%;
+    }
+    50%{
+        margin-left: 30%;
+        width: 40%;
+    }
+    100%{
+        margin-left: 40%;
+        width: 20%;
+    }
 }

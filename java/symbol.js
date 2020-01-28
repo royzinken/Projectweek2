@@ -1,70 +1,71 @@
-var test = Math.floor(Math.random() * 4 + 1);
+var randomizer = Math.floor(Math.random() * 4 + 1);
+var tdentry = document.getElementsByTagName("td");
 
 function assign() {
-    switch(test) {
+    switch(randomizer) {
         case 1:
-            document.getElementsByTagName("td")[0].setAttribute("id", "");
-            document.getElementsByTagName("td")[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
-            document.getElementsByTagName("td")[1].setAttribute("id", "");
-            document.getElementsByTagName("td")[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
-            document.getElementsByTagName("td")[2].setAttribute("id", "2");
-            document.getElementsByTagName("td")[2].innerHTML = "<img src='./images/symbol 3.png' id='2' class='img'>";
-            document.getElementsByTagName("td")[3].setAttribute("id", "correct1");
-            document.getElementsByTagName("td")[3].innerHTML = "<img src='./images/symbol.png' id='correct1' class='img'>";
-            document.getElementsByTagName("td")[4].setAttribute("id", "");
-            document.getElementsByTagName("td")[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
-            document.getElementsByTagName("td")[5].setAttribute("id", "3");
-            document.getElementsByTagName("td")[5].innerHTML = "<img src='./images/symbol 6.png' id='3 class='img'>";
-            document.getElementsByTagName("td")[6].setAttribute("id", "4");
-            document.getElementsByTagName("td")[6].innerHTML = "<img src='./images/symbol 7.png' id='4 class='img'>";
+            tdentry[0].setAttribute("id", "");
+            tdentry[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
+            tdentry[1].setAttribute("id", "");
+            tdentry[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
+            tdentry[2].setAttribute("id", "2");
+            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' id='2' class='img'>";
+            tdentry[3].setAttribute("id", "correct1");
+            tdentry[3].innerHTML = "<img src='./images/symbol.png' id='correct1' class='img'>";
+            tdentry[4].setAttribute("id", "");
+            tdentry[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
+            tdentry[5].setAttribute("id", "3");
+            tdentry[5].innerHTML = "<img src='./images/symbol 6.png' id='3' class='img'>";
+            tdentry[6].setAttribute("id", "4");
+            tdentry[6].innerHTML = "<img src='./images/symbol 7.png' id='4' class='img'>";
             break;
         case 2:
-            document.getElementsByTagName("td")[0].setAttribute("id", "");
-            document.getElementsByTagName("td")[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
-            document.getElementsByTagName("td")[1].setAttribute("id", "");
-            document.getElementsByTagName("td")[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
-            document.getElementsByTagName("td")[2].setAttribute("id", "2");
-            document.getElementsByTagName("td")[2].innerHTML = "<img src='./images/symbol 3.png' id='2' class='img'>";
-            document.getElementsByTagName("td")[3].setAttribute("id", "correct1");
-            document.getElementsByTagName("td")[3].innerHTML = "<img src='./images/symbol.png' id='correct1' class='img'>";
-            document.getElementsByTagName("td")[4].setAttribute("id", "");
-            document.getElementsByTagName("td")[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
-            document.getElementsByTagName("td")[5].setAttribute("id", "3");
-            document.getElementsByTagName("td")[5].innerHTML = "<img src='./images/symbol 6.png' id='3 class='img'>";
-            document.getElementsByTagName("td")[6].setAttribute("id", "4");
-            document.getElementsByTagName("td")[6].innerHTML = "<img src='./images/symbol 7.png' id='4 class='img'>";
+            tdentry[0].setAttribute("id", "4");
+            tdentry[0].innerHTML = "<img src='./images/symbol.png' class='img'>";
+            tdentry[1].setAttribute("id", "2");
+            tdentry[1].innerHTML = "<img src='./images/symbol 4.png' class='img'>";
+            tdentry[2].setAttribute("id", "3");
+            tdentry[2].innerHTML = "<img src='./images/symbol 9.png' class='img'>";
+            tdentry[3].setAttribute("id", "");
+            tdentry[3].innerHTML = "<img src='./images/symbol 7.png' class='img'>";
+            tdentry[4].setAttribute("id", "");
+            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";
+            tdentry[5].setAttribute("id", "");
+            tdentry[5].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
+            tdentry[6].setAttribute("id", "correct1");
+            tdentry[6].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
             break;
         case 3:
-            document.getElementsByTagName("td")[0].setAttribute("id", "");
-            document.getElementsByTagName("td")[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
-            document.getElementsByTagName("td")[1].setAttribute("id", "");
-            document.getElementsByTagName("td")[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
-            document.getElementsByTagName("td")[2].setAttribute("id", "2");
-            document.getElementsByTagName("td")[2].innerHTML = "<img src='./images/symbol 3.png' id='2' class='img'>";
-            document.getElementsByTagName("td")[3].setAttribute("id", "correct1");
-            document.getElementsByTagName("td")[3].innerHTML = "<img src='./images/symbol.png' id='correct1' class='img'>";
-            document.getElementsByTagName("td")[4].setAttribute("id", "");
-            document.getElementsByTagName("td")[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
-            document.getElementsByTagName("td")[5].setAttribute("id", "3");
-            document.getElementsByTagName("td")[5].innerHTML = "<img src='./images/symbol 6.png' id='3 class='img'>";
-            document.getElementsByTagName("td")[6].setAttribute("id", "4");
-            document.getElementsByTagName("td")[6].innerHTML = "<img src='./images/symbol 7.png' id='4 class='img'>";
+            tdentry[0].setAttribute("id", "");
+            tdentry[0].innerHTML = "<img src='./images/symbol 6.png' class='img'>";
+            tdentry[1].setAttribute("id", "4");
+            tdentry[1].innerHTML = "<img src='./images/symbol 1.png' class='img'>";
+            tdentry[2].setAttribute("id", "");
+            tdentry[2].innerHTML = "<img src='./images/symbol 8.png' class='img'>";
+            tdentry[3].setAttribute("id", "correct1");
+            tdentry[3].innerHTML = "<img src='./images/symbol 10.png' class='img'>";
+            tdentry[4].setAttribute("id", "3");
+            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";
+            tdentry[5].setAttribute("id", "");
+            tdentry[5].innerHTML = "<img src='./images/symbol 4.png' class='img'>";
+            tdentry[6].setAttribute("id", "2");
+            tdentry[6].innerHTML = "<img src='./images/symbol 12.png' class='img'>";
             break;
         case 4:
-            document.getElementsByTagName("td")[0].setAttribute("id", "");
-            document.getElementsByTagName("td")[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
-            document.getElementsByTagName("td")[1].setAttribute("id", "");
-            document.getElementsByTagName("td")[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
-            document.getElementsByTagName("td")[2].setAttribute("id", "2");
-            document.getElementsByTagName("td")[2].innerHTML = "<img src='./images/symbol 3.png' id='2' class='img'>";
-            document.getElementsByTagName("td")[3].setAttribute("id", "correct1");
-            document.getElementsByTagName("td")[3].innerHTML = "<img src='./images/symbol.png' id='correct1' class='img'>";
-            document.getElementsByTagName("td")[4].setAttribute("id", "");
-            document.getElementsByTagName("td")[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
-            document.getElementsByTagName("td")[5].setAttribute("id", "3");
-            document.getElementsByTagName("td")[5].innerHTML = "<img src='./images/symbol 6.png' id='3 class='img'>";
-            document.getElementsByTagName("td")[6].setAttribute("id", "4");
-            document.getElementsByTagName("td")[6].innerHTML = "<img src='./images/symbol 7.png' id='4 class='img'>";
+            tdentry[0].setAttribute("id", "");
+            tdentry[0].innerHTML = "<img src='./images/symbol 11.png' class='img'>";
+            tdentry[1].setAttribute("id", "correct1");
+            tdentry[1].innerHTML = "<img src='./images/symbol 14.png' class='img'>";
+            tdentry[2].setAttribute("id", "");
+            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
+            tdentry[3].setAttribute("id", "");
+            tdentry[3].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
+            tdentry[4].setAttribute("id", "2");
+            tdentry[4].innerHTML = "<img src='./images/symbol 1.png' class='img'>";
+            tdentry[5].setAttribute("id", "4");
+            tdentry[5].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
+            tdentry[6].setAttribute("id", "3");
+            tdentry[6].innerHTML = "<img src='./images/symbol 16.png' class='img'>";
             break;
     }
 }
@@ -84,19 +85,21 @@ function clicky(x) {
             document.getElementById("correct3").setAttribute("id", "done3");
             break;
         case document.getElementById("correct4"):
-            document.getElementById("finish").innerText = "correct"
-            document.getElementById("finish").setAttribute("id", "pass");
+            document.getElementById("check").innerHTML = "<p>correct</p>";
+            document.getElementById("check").setAttribute("id", "pass");
+            document.getElementById("pass").setAttribute("onclick", "javascript:unlockLevelOne('./symbol_puzzle.html')");
             x.setAttribute("id", "done4");
             break;
+        case document.getElementById("check"):
+            break;
         case document.getElementById("pass"):
-            parent.location.replace("./succes.html");
             break;
         case document.getElementById("failed"):
-            window.location.replace("./nopuzzleframe copy.html");
+            window.location.replace("./symbol_puzzle.html");
             break;
         default:
-            document.getElementById("finish").innerText = "reset"
-            document.getElementById("finish").setAttribute("id", "failed");
+            document.getElementById("check").innerHTML = "<p>reset</p>";
+            document.getElementById("check").setAttribute("id", "failed");
             document.getElementById("correct1").setAttribute("id", "done1");
             document.getElementById("correct2").setAttribute("id", "done2");
             document.getElementById("correct3").setAttribute("id", "done3");
@@ -104,3 +107,4 @@ function clicky(x) {
             break;
     }
 }
+
