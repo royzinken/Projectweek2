@@ -81,15 +81,15 @@ input[type="checkbox"] {
 #difficulty:checked ~ form #menu label[for=difficulty]::before,
 #sound:checked ~ form #menu label[for=sound]::before,
 #first:checked ~ form #menu label[for=first]::before {
-  left: 1.75rem;													/*Set left to 1.75 rem.*/
-  background: #a60011;									/*Background color.*/
+  left: 1.75rem;												  	/*Set left to 1.75 rem.*/
+  background: #a60011;									  /*Background color.*/
 }
 
 h1 {
-  margin: 0 0 0.5rem 0;
-  text-align: center;
-  white-space: nowrap;
-   color: #004974;
+  margin: 0 0 0.5rem 0;                     /*Set margin to 0,0,0.*/
+  text-align: center;                       /*Text align to center.*/
+  white-space: nowrap; 
+  color: #004974;                         /*Define the blue color.*/
 }
 
 h2 {
