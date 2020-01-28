@@ -1,22 +1,25 @@
+<!DOCTYPE html>
+
 <!--
 
 Date:         28-01-2020
-Author:       T.Schoon - K.schlangen
+Author:       T.Schoon - K.Schlangen
 Project:      Projectweek 2 
+Bron:         Codepen.io
 
 -->
 
-<title>Kruisje_Bolletje</title>                                     <!--Title of the page-->
-<head>	                                                            <!--start of the head-->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">   <!--link to the css file-->
-</head>                                                             <!--End of the head-->
-
-
-
+<html>                                                                <!--start of the html-->
+<title>Kruisje_Bolletje</title>                                       <!--Title of the page-->
+<head>	                                                              <!--start of the head-->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">     <!--link to the css file-->
+</head>                                                               <!--End of the head-->
 
 <input type="checkbox" id="start" />
 
-<form id="tictactoe">  
+<!--START OF THE GAME MENU-->
+
+<form id="tictactoe">                                                 
   <input type="radio" name="cell-0" id="cell-0-x" />
   <input type="radio" name="cell-0" id="cell-0-o" />
   <input type="radio" name="cell-1" id="cell-1-x" />
@@ -35,15 +38,19 @@ Project:      Projectweek 2
   <input type="radio" name="cell-7" id="cell-7-o" />
   <input type="radio" name="cell-8" id="cell-8-x" />
   <input type="radio" name="cell-8" id="cell-8-o" />
+  
+<!--END OF THE GAME MENU-->
 
   <div id="menu" class="scrim">                                         <!--start of div Menu-->
     <div class="center">                                                <!--start text center-->
       <h1>Kruisje Bolletje</h1>                                         <!--Title of the game-->
-    <label for="start" id="start-button" class="btn">Start</label>      <!--start buttum-->
+    <label for="start" id="start-button" class="btn">Start</label>      <!--start button-->
   </div>                                                                <!--end of text center-->
   </div>                                                                <!--end of div menu-->
-
-  <div id="board" class="center">
+  
+    <!--START OF THE GAME LAYOUT-->
+  
+    <div id="board" class="center">
     <div class="tile" id="tile-0">
       <label for="cell-0-x"></label>
       <div></div>
@@ -80,19 +87,27 @@ Project:      Projectweek 2
       <label for="cell-8-x"></label>
       <div></div>
     </div>
+  </div> 
+
+  <!--END OF THE GAME LAYOUT-->
+  
+  
+  <div id="label-computer" class="btn">                                     <!--Button for the computer to make a move-->
+    Computer Move!                                                          <!--end of the computer button-->
+  
+  
+    <label for="cell-0-o"></label>                                          <!--start of cell 0-->
+    <label for="cell-1-o"></label>                                          <!--start of cell 1-->
+    <label for="cell-2-o"></label>                                          <!--start of cell 2-->
+    <label for="cell-3-o"></label>                                          <!--start of cell 3-->
+    <label for="cell-4-o"></label>                                          <!--start of cell 4-->
+    <label for="cell-5-o"></label>                                          <!--start of cell 5-->
+    <label for="cell-6-o"></label>                                          <!--start of cell 6-->
+    <label for="cell-7-o"></label>                                          <!--start of cell 7-->
+    <label for="cell-8-o"></label>                                          <!--start of cell 8-->
   </div>
-  <div id="label-computer" class="btn">
-    Computer Move!
-    <label for="cell-0-o"></label>
-    <label for="cell-1-o"></label>
-    <label for="cell-2-o"></label>
-    <label for="cell-3-o"></label>
-    <label for="cell-4-o"></label>
-    <label for="cell-5-o"></label>
-    <label for="cell-6-o"></label>
-    <label for="cell-7-o"></label>
-    <label for="cell-8-o"></label>
-  </div>
+
+
   <div id="end" class="scrim">
     <div id="message" class="center">
       <div>
