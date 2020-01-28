@@ -82,7 +82,7 @@ input[type="checkbox"] {
 #sound:checked ~ form #menu label[for=sound]::before,
 #first:checked ~ form #menu label[for=first]::before {
   left: 1.75rem;													/*Set left to 1.75 rem.*/
-  background: green;												/*Background color.*/
+  background: #a60011;												/*Background color.*/
 }
 
 h1 {
