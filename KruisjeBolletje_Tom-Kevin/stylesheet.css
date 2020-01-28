@@ -2,29 +2,29 @@
 
 input[type="radio"],
 input[type="checkbox"] {
-  position: absolute;												/*Positioning to absolute.*/
+  position: absolute;												 /*Positioning to absolute.*/
   top: -9999em;
 }
 
 #menu {
-  display: block;													/*Set display to block.*/
-  background: rgba(0,0,0,0.8);										/*Background black coloring.*/
+  display: block;												  	/*Set display to block.*/
+  background: rgba(0,0,0,0.8);						/*Background black coloring.*/
   text-align: center;												/*Make the text align center.*/
 }
 
 #menu > div {
-  background: lightblue;											/*Background coloring.*/
+  background: lightblue;									/*Background coloring.*/
   padding: 16px 32px;												/*Padding stuff.*/
-  border-radius: 10px;												/*Set border radius to 10 pixels.*/
+  border-radius: 10px;											/*Set border radius to 10 pixels.*/
 }
 
 .toggle-group {
-  display: flex;													/*Set display to flex.*/
+  display: flex;													  /*Set display to flex.*/
 }
 
 .toggle-group span { 
-  flex: 1; 															/*Set flex to 1.*/
-  text-align: left;													/*Set text align to left.*/
+  flex: 1; 														    	/*Set flex to 1.*/
+  text-align: left;												  /*Set text align to left.*/
 }
 
 .toggle-group span:nth-of-type(1) {
@@ -33,12 +33,12 @@ input[type="checkbox"] {
 
 .toggle {
   display: inline-block;
-  width: 48px;														/*Width to 48 pixels.*/
-  height: 24px;														/*Height to 24 pixels.*/
-  background: #ddd;													/*Background.*/
+  width: 48px;													    /*Width to 48 pixels.*/
+  height: 24px;													  	/*Height to 24 pixels.*/
+  background: #ddd;												/*Background.*/
   vertical-align: bottom;
   margin: 5.28px 8px;
-  border-radius: 16px;												/*Set border radius to 16 pixels.*/
+  border-radius: 16px;											/*Set border radius to 16 pixels.*/
   position: relative;												/*Relative positioning.*/
   cursor: pointer;													/*Set cursor to pointer.*/
 }
@@ -46,20 +46,20 @@ input[type="checkbox"] {
 .toggle::before {
   content: "";
   position: absolute;												/*Absolute positioning.*/
-  display: block;													/*Display to block.*/
-  width: 16px;														/*Set width to 16 pixels.*/
-  height: 16px;														/*Set height to 16 pixels.*/
-  top: 4px;															/*Set top to 4 pixels.*/
-  left: 4px;														/*Set left to 4 pixels.*/
-  background: #000;													/*Set background to 000.*/
-  background: #004974;												/*Other background color.*/
-  border-radius: 100%;												/*Define border radius.*/
+  display: block;												  	/*Display to block.*/
+  width: 16px;													  	/*Set width to 16 pixels.*/
+  height: 16px;														  /*Set height to 16 pixels.*/
+  top: 4px;															    /*Set top to 4 pixels.*/
+  left: 4px;														    /*Set left to 4 pixels.*/
+  background: #000;												/*Set background to 000.*/
+  background: #004974;										/*Other background color.*/
+  border-radius: 100%;										 	/*Define border radius.*/
   transition: left 0.25s, background-color 0.25s;
 }
 
 .btn {
-  width: 100%;														/*Width to 100%.*/
-  display: inline-block;											/*Display to inline-block.*/
+  width: 100%;													  	/*Width to 100%.*/
+  display: inline-block;										/*Display to inline-block.*/
   background: #000;
   color: #fff;
   border-radius: 5px;												/*Set border radius to 5 pixels.*/
@@ -71,7 +71,7 @@ input[type="checkbox"] {
 }
 
 .btn:hover {
-  background: #333;													/*Hover coloring.*/
+  background: #333;												/*Hover coloring.*/
 }
 
 #start:checked ~ form #menu {
@@ -82,7 +82,7 @@ input[type="checkbox"] {
 #sound:checked ~ form #menu label[for=sound]::before,
 #first:checked ~ form #menu label[for=first]::before {
   left: 1.75rem;													/*Set left to 1.75 rem.*/
-  background: #a60011;												/*Background color.*/
+  background: #a60011;									/*Background color.*/
 }
 
 h1 {
