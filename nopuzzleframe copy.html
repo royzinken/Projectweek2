@@ -9,22 +9,22 @@ and open the template in the editor.
         <link href="./styles/main.css" type="text/css" rel="stylesheet">
         <title>Bomb defusal game</title>        
     </head>
-    <body background='./images/nopuzzle.png' id="symbols">   
+    <body background='./images/nopuzzle.png' id="symbols" onload="assign()">
         <center>     
             <table id="inputpad">
                 <tr>
-                    <td onclick="clicky(this)"><img src="./images/symbol 15.png"  class="img1"></td>
-                    <td onclick="clicky(this)"><img src="./images/symbol 2.png"  class="img1"></td>
-                    <td onclick="clicky(this)" id="2"><img src="./images/symbol 3.png"  class="img1"></td>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
                 </tr>
                 <tr>
-                    <td onclick="clicky(this)" id="correct1"><img src="./images/symbol.png"  class="img1"></td>
-                    <td onclick="clicky(this)"><img src="./images/symbol 17.png"  class="img1"></td>
-                    <td onclick="clicky(this)" id="3"><img src="./images/symbol 6.png"  class="img1"></td>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
                 </tr>
                 <tr>
-                    <td onclick="clicky(this)" id="4"><img src="./images/symbol 7.png" class="img1"></td>
-                    <td colspan="2" onclick="clicky(this)" id="finish"></td colspan="2">
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td colspan="2" onclick="clicky(this)" id="finish"></td></a>
                 </tr>
             </table>
         </center>

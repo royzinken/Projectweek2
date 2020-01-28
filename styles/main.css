@@ -16,19 +16,19 @@ body#symbols {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#cccccc",GradientType=1);
 }
 
-.img1 {
+body#symbols .img {
     display: block;
     margin-left: 40%;
     width: 20%;
 }
 
-.img1:hover {
+body#symbols .img:hover {
     display: block;
     margin-left: 30%;
     width: 40%;
 }
 
-td {
+body#symbols td {
     border: 2px yellow groove;
     border-radius: 30px;
     background: rgb(255,255,255);
@@ -40,7 +40,7 @@ td {
     height: 33.33333%;
 }
 
-#inputpad {
+body#symbols #inputpad {
     position: fixed;
     bottom: 5%;
     right: 5%;
@@ -49,7 +49,7 @@ td {
     border: 4px yellow groove;
 }
 
-#finish {
+body#symbols #finish {
     border-radius: 40px;
     background: #333333;
     background: -moz-linear-gradient(122deg, #333333 0%, #666666, #333333 100%);
@@ -58,7 +58,7 @@ td {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
 }
 
-#pass {
+body#symbols #pass {
     border-radius: 40px;
     background: green;
     background: -moz-linear-gradient(122deg, lime 0%, green, lime 100%);
@@ -67,7 +67,7 @@ td {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
 }
 
-#failed {
+body#symbols #failed {
     border-radius: 40px;
     background: lime;
     background: -moz-linear-gradient(122deg, red 0%, darkred, red 100%);
