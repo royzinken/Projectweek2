@@ -432,7 +432,7 @@ input[id*='-6-o']:checked ~ #board #tile-6 div::before,
 input[id*='-7-o']:checked ~ #board #tile-7 div::before,
 input[id*='-8-o']:checked ~ #board #tile-8 div::before {
   content: "O";
-  background: #a60011;
+  background: green;
   color: #ffc7b5;
 }
 
