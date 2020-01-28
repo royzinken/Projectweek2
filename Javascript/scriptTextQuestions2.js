@@ -1,4 +1,4 @@
-
+// this javascript if for morsecodePuzzle.html
   // DEFAULT SETTINGS
   $('#wrong').hide();
   $('#correct').hide();

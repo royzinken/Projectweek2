@@ -1,4 +1,4 @@
-
+// this java script is for scramblecodepuzzle.html
   // DEFAULT SETTINGS
   $('#wrong').hide();
   $('#correct').hide();
@@ -30,7 +30,3 @@ function guessAnswer () {
 }
 
 guessAnswer();
-
-
-function Morsecheck(){
-}
