@@ -22,9 +22,14 @@ body#symbols .img {
     width: 20%;
 }
 
-body#symbols .img:hover {
+/* body#symbols .img:hover {
     animation: hovering 1s forwards infinite;
+} */
+
+body#symbols td:hover {
+    background: darkgray;
 }
+
 
 body#symbols td {
     border: 2px darkgray groove;

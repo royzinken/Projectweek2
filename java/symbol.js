@@ -1,26 +1,31 @@
 var url = window.location.pathname;     //define the current url
 var filename = url.substring(url.lastIndexOf('/')+1);   
-Audio(src="./audio/countdown_audio")                    
+Audio(src="./audio/countdown_audio");                  
+alert(filename);
 
 function assign() {
-    var randomizer = Math.floor(Math.random() * 4 + 1);     //randomizer 1-4
+    var min=1; 
+    var max=4;  
+    var random = Math.floor(Math.random() * (+max - +min)) + +min;
+
+    // var randomizer = Math.floor(Math.random() * 4) + 1;       //randomizer 1-5
     var tdentry = document.getElementsByTagName("td");     //preset for 'select td'    
-    switch(randomizer) {     //switch gives a random set of images and fitting sequences
-        case 1:     //sequence 1
-            tdentry[0].setAttribute("id", "");                                         //change the id
-            tdentry[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";   //change the image
-            tdentry[1].setAttribute("id", "");                                         //change the id
-            tdentry[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";    //change the image
-            tdentry[2].setAttribute("id", "2");                                        //change the id
-            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";    //change the image
-            tdentry[3].setAttribute("id", "correct1");                                 //change the id
-            tdentry[3].innerHTML = "<img src='./images/symbol.png' class='img'>";      //change the image
-            tdentry[4].setAttribute("id", "");                                         //change the id
-            tdentry[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";   //change the image
-            tdentry[5].setAttribute("id", "3");                                        //change the id
-            tdentry[5].innerHTML = "<img src='./images/symbol 6.png' class='img'>";    //change the image
-            tdentry[6].setAttribute("id", "4");                                        //change the id
-            tdentry[6].innerHTML = "<img src='./images/symbol 7.png' class='img'>";    //change the image
+    switch(random) {     //switch gives a random set of images and fitting sequences
+        case 1:
+            tdentry[0].setAttribute("id", "");
+            tdentry[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
+            tdentry[1].setAttribute("id", "");
+            tdentry[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
+            tdentry[2].setAttribute("id", "2");
+            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
+            tdentry[3].setAttribute("id", "correct1");
+            tdentry[3].innerHTML = "<img src='./images/symbol.png' class='img'>";
+            tdentry[4].setAttribute("id", "");
+            tdentry[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
+            tdentry[5].setAttribute("id", "3");
+            tdentry[5].innerHTML = "<img src='./images/symbol 6.png' class='img'>";
+            tdentry[6].setAttribute("id", "4");
+            tdentry[6].innerHTML = "<img src='./images/symbol 7.png' class='img'>";
             break;
         case 2:     //sequence 2
             tdentry[0].setAttribute("id", "4");                                        //change the id
@@ -90,8 +95,22 @@ function clicky(x) {
         case document.getElementById("correct4"):
             document.getElementById("check").innerHTML = "<p>correct</p>";
             document.getElementById("check").setAttribute("id", "pass");
-            if(filename == "symbol_puzzle_dif2.html"){
-                document.getElementById("pass").setAttribute("onclick", "javascript:unlockLevelTwo('./symbol_puzzle_dif1.html')");
+            
+            if (filename == 'symbol_puzzle_dif5.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelTwo('./symbol_puzzle_dif4.html')");
+
+            }
+            else if (filename == 'symbol_puzzle_dif4.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelThree('./symbol_puzzle_dif3.html')");
+
+            }
+            else if (filename == 'symbol_puzzle_dif3.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelFour('./symbol_puzzle_dif2.html')");
+
+            }
+            else if (filename == 'symbol_puzzle_dif2.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelFive('./symbol_puzzle_dif1.html')");
+
             }
             x.setAttribute("id", "done4");
             break;
@@ -103,7 +122,22 @@ function clicky(x) {
             }
             break;
         case document.getElementById("failed"):
-            window.location.replace("./symbol_puzzle_dif2.html");
+            if (filename == 'symbol_puzzle_dif5.html') {
+                window.location.replace("./symbol_puzzle_dif5.html");
+            }
+            else if (filename == 'symbol_puzzle_dif4.html') {
+                window.location.replace("./symbol_puzzle_dif4.html");
+            }
+            else if (filename == 'symbol_puzzle_dif3.html') {
+                window.location.replace("./symbol_puzzle_dif3.html");
+            }
+            else if (filename == 'symbol_puzzle_dif2.html') {
+                window.location.replace("./symbol_puzzle_dif2.html");
+            }
+            else if (filename == 'symbol_puzzle_dif1.html') {
+                window.location.replace("./symbol_puzzle_dif1.html");
+            }
+        
             break;
         default:
             document.getElementById("check").innerHTML = "<p>reset</p>";
