@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="./styles/main.css" type="text/css" rel="stylesheet">
+        <title>Bomb defusal game</title>        
+    </head>
+    <body background='./images/nopuzzle.png' id="symbols" onload="assign()" onload="answer1(this)">
+        <center>     
+            <table id="inputpad">
+                <tr>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                </tr>
+                <tr>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                </tr>
+                <tr>
+                    <a href="#"><td onclick="clicky(this)"></td></a>
+                    <a href="#"><td colspan="2" id="check" onclick="clicky(this)"></td></a>
+                </tr>
+            </table>
+        </center>
+        <script src="./java/symbol.js"></script>
+        <script type="text/javascript ">
+            function unlockLevelOne(file) {
+                parent.next.location=file;
+            }
+        </script>
+    </body>
+</html>

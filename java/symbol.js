@@ -1,23 +1,26 @@
-var randomizer = Math.floor(Math.random() * 4 + 1);
-var tdentry = document.getElementsByTagName("td");
+var url = window.location.pathname;     //define the current url
+var filename = url.substring(url.lastIndexOf('/')+1);   
+Audio(src="./audio/countdown_audio")                    
 
 function assign() {
-    switch(randomizer) {
+    var randomizer = Math.floor(Math.random() * 4 + 1);     //randomizer 1-4
+    var tdentry = document.getElementsByTagName("td");     //preset for 'select td'    
+    switch(randomizer) {     //switch gives a random set of images and fitting sequences
         case 1:
             tdentry[0].setAttribute("id", "");
             tdentry[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
             tdentry[1].setAttribute("id", "");
             tdentry[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
             tdentry[2].setAttribute("id", "2");
-            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' id='2' class='img'>";
+            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
             tdentry[3].setAttribute("id", "correct1");
-            tdentry[3].innerHTML = "<img src='./images/symbol.png' id='correct1' class='img'>";
+            tdentry[3].innerHTML = "<img src='./images/symbol.png' class='img'>";
             tdentry[4].setAttribute("id", "");
             tdentry[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
             tdentry[5].setAttribute("id", "3");
-            tdentry[5].innerHTML = "<img src='./images/symbol 6.png' id='3' class='img'>";
+            tdentry[5].innerHTML = "<img src='./images/symbol 6.png' class='img'>";
             tdentry[6].setAttribute("id", "4");
-            tdentry[6].innerHTML = "<img src='./images/symbol 7.png' id='4' class='img'>";
+            tdentry[6].innerHTML = "<img src='./images/symbol 7.png' class='img'>";
             break;
         case 2:
             tdentry[0].setAttribute("id", "4");
@@ -87,15 +90,20 @@ function clicky(x) {
         case document.getElementById("correct4"):
             document.getElementById("check").innerHTML = "<p>correct</p>";
             document.getElementById("check").setAttribute("id", "pass");
-            document.getElementById("pass").setAttribute("onclick", "javascript:unlockLevelOne('./symbol_puzzle.html')");
+            if(filename == "symbol_puzzle_dif2.html"){
+                document.getElementById("pass").setAttribute("onclick", "javascript:unlockLevelOne('./symbol_puzzle_dif1.html')");
+            }
             x.setAttribute("id", "done4");
             break;
         case document.getElementById("check"):
             break;
         case document.getElementById("pass"):
+            if(filename = "symbol_puzzle_dif1.html"){
+                window.location.replace("./succes.html");
+            }
             break;
         case document.getElementById("failed"):
-            window.location.replace("./symbol_puzzle.html");
+            window.location.replace("./symbol_puzzle_dif2.html");
             break;
         default:
             document.getElementById("check").innerHTML = "<p>reset</p>";
