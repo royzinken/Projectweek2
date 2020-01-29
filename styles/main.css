@@ -8,15 +8,15 @@ and open the template in the editor.
     Author     : J. de Klijn
 */
 
-body {
+body {    /* styling for body */
     font-family: 'Segoe UI', Calibri, Arial;
     margin:0;
 }
-h2{
+h2{  /* positioning for h2 */
     font-weight:normal;
     text-align:center;
 }
-h3{
+h3{  /* positioning and size for h3  */
     font-weight:normal;
     margin:3px 0px;
     text-align:center;
