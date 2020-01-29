@@ -11,7 +11,7 @@ function guessAnswer () {
 		if (answer == 'dot') {
       $('#correct').show();
       $('#wrong').hide();
-     // window.location.href = "http://www.w3schools.com";
+     // window.location.href = "../succes.html";
       
   //IF WRONG ANSWER
       } else {
