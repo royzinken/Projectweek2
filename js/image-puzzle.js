@@ -3,6 +3,7 @@
 var imagePuzzle = {
     stepCount: 0,
     startTime: new Date().getTime(),
+    
     startGame: function (images, gridSize) {
         this.setImage(images, gridSize);
         helper.doc('playPanel').style.display = 'block';
@@ -33,8 +34,8 @@ var imagePuzzle = {
             li.style.backgroundImage = 'url(' + image.src + ')';
             li.style.backgroundSize = (gridSize * 100) + '%';
             li.style.backgroundPosition = xpos + ' ' + ypos;
-            li.style.width = 400 / gridSize + 'px';
-            li.style.height = 400 / gridSize + 'px';
+            li.style.width = 320 / gridSize + 'px';
+            li.style.height = 245 / gridSize + 'px';
 
             li.setAttribute('draggable', 'true');
             li.ondragstart = (event) => event.dataTransfer.setData('data', event.target.id);
@@ -52,6 +53,7 @@ var imagePuzzle = {
                     let vals = Array.from(helper.doc('sortable').children).map(x => x.id);
                     var now = new Date().getTime();
                     if (isSorted(vals)) {
+                        alert("Works");
                         // helper.doc('actualImageBox').style.display = 'none';
                         // helper.doc('gameOver').style.display = 'block';
                         helper.doc('actualImageBox').innerHTML = helper.doc('gameOver').innerHTML;

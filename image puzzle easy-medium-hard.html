@@ -8,23 +8,12 @@
 
 <body>
     <div id="collage">
-        <h2>Image Puzzle</h2>
-        <hr />
         <div id="playPanel" style="padding:5px;display:none;">
-            <h3 id="imgTitle"></h3>
-            <hr />
             <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
+
                 <ul id="sortable" class="sortable"></ul>
+
                 <div id="actualImageBox">
-                    <div id="stepBox">
-                    <img id="actualImage" />
-                    <div>Re-arrange to create a picture like this.</div>
-                    <p id="levelPanel">
-                        <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"
-                        /> <label for="easy">Easy</label>
-                        <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="medium">Medium</label>
-                        <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="hard">Hard</label>
-                    </p>
                 </div>
             </div>
         </div>
@@ -48,8 +37,7 @@
             ];
 
             window.onload = function () {
-                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
-                imagePuzzle.startGame(images, gridSize);
+                imagePuzzle.startGame(images, 3);
             };
         </script>
     </div>
