@@ -12,12 +12,6 @@ var imagePuzzle = {
         this.startTime = new Date().getTime();
         this.tick();
     },
-    tick: function () {
-        var now = new Date().getTime();
-        var elapsedTime = parseInt((now - imagePuzzle.startTime) / 1000, 10);
-        helper.doc('timerPanel').textContent = elapsedTime;
-        timerFunction = setTimeout(imagePuzzle.tick, 1000);
-    },
     setImage: function (images, gridSize = 4) {
         var percentage = 100 / (gridSize - 1);
         var image = images[Math.floor(Math.random() * images.length)];
