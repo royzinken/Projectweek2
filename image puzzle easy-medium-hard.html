@@ -17,12 +17,6 @@
                 <ul id="sortable" class="sortable"></ul>
                 <div id="actualImageBox">
                     <div id="stepBox">
-                        <div>Steps:</div>
-                        <div id="stepCount" class="stepCount">0</div>
-                    </div>
-                    <div id="timeBox">
-                        Time Taken: <span id="timerPanel"></span> secs
-                    </div>
                     <img id="actualImage" />
                     <div>Re-arrange to create a picture like this.</div>
                     <p id="levelPanel">
@@ -31,22 +25,17 @@
                         <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="medium">Medium</label>
                         <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="hard">Hard</label>
                     </p>
-                    <div>
-                        <button id="btnRule" type="button" class="btn" onclick="rules();">Rules</button>
-                        <button id="newPhoto" type="button" class="btn" onclick="restart();">Another Photo</button>
-                        <button id="btnReplay" type="button" class="btn" onclick="about();">About</button>
-                    </div>
                 </div>
             </div>
         </div>
         <div id="gameOver" style="display:none;">
             <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
-                <h2 style="text-align:center">Game Over!!</h2>
-                Congratulations!! <br /> You have completed this picture.
-                <br /> Steps: <span id="stepCount" class="stepCount">0</span> steps.
-                <br /> Time Taken: <span class="timeCount">0</span> seconds<br />
+                <h2 style="text-align:center"></h2>
+                Congratulations!! <br /> You have completed this puzzle.
+                <br /> test</span> 
+                <br /> test </span>
                 <div>
-                    <button type="button" onclick="window.location.reload(true);">Play Again</button>
+                    <button type="button" onclick="window.location.reload(true);">Reset</button>
                 </div>
             </div>
         </div>
@@ -64,16 +53,6 @@
                 var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
                 imagePuzzle.startGame(images, gridSize);
             };
-            function restart() {
-                var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
-                imagePuzzle.startGame(images, gridSize);
-            }
-            function rules() {
-                alert('Re arrange the image parts in a way that it correctly forms the picture. \nThe no. of steps taken will be counted.');
-            }
-            function about() {
-                alert('Developed by Anurag Gandhi. \nHe can be contacted at: soft.gandhi@gmail.com');
-            }
         </script>
     </div>
 </body>
