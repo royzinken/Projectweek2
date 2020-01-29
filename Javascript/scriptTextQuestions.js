@@ -1,32 +1,24 @@
-// this java script is for scramblecodepuzzle.html
+// this javascript if for morsecodePuzzle.html
   // DEFAULT SETTINGS
   $('#wrong').hide();
   $('#correct').hide();
 
-  // SELECT INPUT BOX + CLEAR AFTER WRONG ANSWER
-  $('text.superhero').focus(function () {
-      $('#wrong').hide();
-      $('#correct').hide();
-      $("button.submit").show();
-  });
-
 function guessAnswer () {
   
-  // CHECK ANSWER
-  $("button.submit").click(function () {
-    var answer = document.getElementById("cookie").value;
+  var answer = document.getElementById("cookie").value;
     
   //IF CORRECT ANSWER
 		if (answer == 'Why are you running') {
-			$('#correct').show();
+      $('#correct').show();
+      $('#wrong').hide();
+     // window.location.href = "http://www.w3schools.com";
       
   //IF WRONG ANSWER
       } else {
-          $('#wrong').show();}
+          $('#wrong').show();
+          $('#correct').hide();
+          document.getElementById("cookie").value = "";
+        }
           
 
-  });
-  
 }
-
-guessAnswer();
