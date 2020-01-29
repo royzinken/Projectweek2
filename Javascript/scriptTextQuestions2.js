@@ -8,7 +8,7 @@ function guessAnswer () {
   var answer = document.getElementById("cookie").value;
     
   //IF CORRECT ANSWER
-		if (answer == 'dot') {
+		if (answer == 'already dead') {
       $('#correct').show();
       $('#wrong').hide();
      // window.location.href = "http://www.w3schools.com";
