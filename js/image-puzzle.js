@@ -1,15 +1,11 @@
-﻿var timerFunction;
-
-var imagePuzzle = {
-    stepCount: 0,
-    startTime: new Date().getTime(),
+﻿var imagePuzzle = {  /* all the code for the puzzel */ 
    /* this is code for the game to start */ 
     startGame: function (images, gridSize) {
         this.setImage(images, gridSize);
         helper.doc('playPanel').style.display = 'block';
         helper.shuffle('sortable');
     },
-    /* code for the photos, size and moving the photos */
+    /* code for positioning the photos */
     setImage: function (images, gridSize = 4) {  
         var percentage = 100 / (gridSize - 1);
         var image = images[Math.floor(Math.random() * images.length)];
@@ -19,7 +15,7 @@ var imagePuzzle = {
         for (var i = 0; i < gridSize * gridSize; i++) {
             var xpos = (percentage * (i % gridSize)) + '%';
             var ypos = (percentage * Math.floor(i / gridSize)) + '%';
-
+        /* code for the size of the photos */
             let li = document.createElement('li');
             li.id = i;
             li.setAttribute('data-value', i);
@@ -28,7 +24,7 @@ var imagePuzzle = {
             li.style.backgroundPosition = xpos + ' ' + ypos;
             li.style.width = 320 / gridSize + 'px';
             li.style.height = 245 / gridSize + 'px';
-
+         /* code for moving the photos */
             li.setAttribute('draggable', 'true');
             li.ondragstart = (event) => event.dataTransfer.setData('data', event.target.id);
             li.ondragover = (event) => event.preventDefault();
@@ -43,10 +39,10 @@ var imagePuzzle = {
                     p.insertBefore(origin, temp);
                 }
             };
-            li.setAttribute('dragstart', 'true');
+            li.setAttribute('dragstart', 'true');     /* code to drag start */ 
             helper.doc('sortable').appendChild(li);
         }
-        helper.shuffle('sortable');
+        helper.shuffle('sortable');      /* code for moving the photos */
     }
 };
 
@@ -55,7 +51,7 @@ isSorted = (arr) => arr.every((elem, index) => { return elem == index; });
 var helper = {
     doc: (id) => document.getElementById(id) || document.createElement("div"),
 
-    shuffle: (id) => {
+    shuffle: (id) => {         /* code for moving the photos */
         var ul = document.getElementById(id);
         for (var i = ul.children.length; i >= 0; i--) {
             ul.appendChild(ul.children[Math.random() * i | 0]);
