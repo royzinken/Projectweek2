@@ -6,69 +6,69 @@ function assign() {
     var randomizer = Math.floor(Math.random() * 4 + 1);     //randomizer 1-4
     var tdentry = document.getElementsByTagName("td");     //preset for 'select td'    
     switch(randomizer) {     //switch gives a random set of images and fitting sequences
-        case 1:
-            tdentry[0].setAttribute("id", "");
-            tdentry[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
-            tdentry[1].setAttribute("id", "");
-            tdentry[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
-            tdentry[2].setAttribute("id", "2");
-            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
-            tdentry[3].setAttribute("id", "correct1");
-            tdentry[3].innerHTML = "<img src='./images/symbol.png' class='img'>";
-            tdentry[4].setAttribute("id", "");
-            tdentry[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
-            tdentry[5].setAttribute("id", "3");
-            tdentry[5].innerHTML = "<img src='./images/symbol 6.png' class='img'>";
-            tdentry[6].setAttribute("id", "4");
-            tdentry[6].innerHTML = "<img src='./images/symbol 7.png' class='img'>";
+        case 1:     //sequence 1
+            tdentry[0].setAttribute("id", "");                                         //change the id
+            tdentry[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";   //change the image
+            tdentry[1].setAttribute("id", "");                                         //change the id
+            tdentry[1].innerHTML = "<img src='./images/symbol 2.png' class='img'>";    //change the image
+            tdentry[2].setAttribute("id", "2");                                        //change the id
+            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";    //change the image
+            tdentry[3].setAttribute("id", "correct1");                                 //change the id
+            tdentry[3].innerHTML = "<img src='./images/symbol.png' class='img'>";      //change the image
+            tdentry[4].setAttribute("id", "");                                         //change the id
+            tdentry[4].innerHTML = "<img src='./images/symbol 17.png' class='img'>";   //change the image
+            tdentry[5].setAttribute("id", "3");                                        //change the id
+            tdentry[5].innerHTML = "<img src='./images/symbol 6.png' class='img'>";    //change the image
+            tdentry[6].setAttribute("id", "4");                                        //change the id
+            tdentry[6].innerHTML = "<img src='./images/symbol 7.png' class='img'>";    //change the image
             break;
-        case 2:
-            tdentry[0].setAttribute("id", "4");
-            tdentry[0].innerHTML = "<img src='./images/symbol.png' class='img'>";
-            tdentry[1].setAttribute("id", "2");
-            tdentry[1].innerHTML = "<img src='./images/symbol 4.png' class='img'>";
-            tdentry[2].setAttribute("id", "3");
-            tdentry[2].innerHTML = "<img src='./images/symbol 9.png' class='img'>";
-            tdentry[3].setAttribute("id", "");
-            tdentry[3].innerHTML = "<img src='./images/symbol 7.png' class='img'>";
-            tdentry[4].setAttribute("id", "");
-            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";
-            tdentry[5].setAttribute("id", "");
-            tdentry[5].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
-            tdentry[6].setAttribute("id", "correct1");
-            tdentry[6].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
+        case 2:     //sequence 2
+            tdentry[0].setAttribute("id", "4");                                        //change the id
+            tdentry[0].innerHTML = "<img src='./images/symbol.png' class='img'>";      //change the image
+            tdentry[1].setAttribute("id", "2");                                        //change the id
+            tdentry[1].innerHTML = "<img src='./images/symbol 4.png' class='img'>";    //change the image
+            tdentry[2].setAttribute("id", "3");                                        //change the id
+            tdentry[2].innerHTML = "<img src='./images/symbol 9.png' class='img'>";    //change the image
+            tdentry[3].setAttribute("id", "");                                         //change the id
+            tdentry[3].innerHTML = "<img src='./images/symbol 7.png' class='img'>";    //change the image
+            tdentry[4].setAttribute("id", "");                                         //change the id
+            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";   //change the image
+            tdentry[5].setAttribute("id", "");                                         //change the id
+            tdentry[5].innerHTML = "<img src='./images/symbol 3.png' class='img'>";    //change the image
+            tdentry[6].setAttribute("id", "correct1");                                 //change the id
+            tdentry[6].innerHTML = "<img src='./images/symbol 2.png' class='img'>";    //change the image
             break;
-        case 3:
-            tdentry[0].setAttribute("id", "");
-            tdentry[0].innerHTML = "<img src='./images/symbol 6.png' class='img'>";
-            tdentry[1].setAttribute("id", "4");
-            tdentry[1].innerHTML = "<img src='./images/symbol 1.png' class='img'>";
-            tdentry[2].setAttribute("id", "");
-            tdentry[2].innerHTML = "<img src='./images/symbol 8.png' class='img'>";
-            tdentry[3].setAttribute("id", "correct1");
-            tdentry[3].innerHTML = "<img src='./images/symbol 10.png' class='img'>";
-            tdentry[4].setAttribute("id", "3");
-            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";
-            tdentry[5].setAttribute("id", "");
-            tdentry[5].innerHTML = "<img src='./images/symbol 4.png' class='img'>";
-            tdentry[6].setAttribute("id", "2");
-            tdentry[6].innerHTML = "<img src='./images/symbol 12.png' class='img'>";
+        case 3:     //sequence 3
+            tdentry[0].setAttribute("id", "");                                         //change the id
+            tdentry[0].innerHTML = "<img src='./images/symbol 6.png' class='img'>";    //change the image
+            tdentry[1].setAttribute("id", "4");                                        //change the id
+            tdentry[1].innerHTML = "<img src='./images/symbol 1.png' class='img'>";    //change the image
+            tdentry[2].setAttribute("id", "");                                         //change the id
+            tdentry[2].innerHTML = "<img src='./images/symbol 8.png' class='img'>";    //change the image
+            tdentry[3].setAttribute("id", "correct1");                                 //change the id
+            tdentry[3].innerHTML = "<img src='./images/symbol 10.png' class='img'>";   //change the image
+            tdentry[4].setAttribute("id", "3");                                        //change the id
+            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";   //change the image
+            tdentry[5].setAttribute("id", "");                                         //change the id
+            tdentry[5].innerHTML = "<img src='./images/symbol 4.png' class='img'>";    //change the image
+            tdentry[6].setAttribute("id", "2");                                        //change the id
+            tdentry[6].innerHTML = "<img src='./images/symbol 12.png' class='img'>";   //change the image
             break;
-        case 4:
-            tdentry[0].setAttribute("id", "");
-            tdentry[0].innerHTML = "<img src='./images/symbol 11.png' class='img'>";
-            tdentry[1].setAttribute("id", "correct1");
-            tdentry[1].innerHTML = "<img src='./images/symbol 14.png' class='img'>";
-            tdentry[2].setAttribute("id", "");
-            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
-            tdentry[3].setAttribute("id", "");
-            tdentry[3].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
-            tdentry[4].setAttribute("id", "2");
-            tdentry[4].innerHTML = "<img src='./images/symbol 1.png' class='img'>";
-            tdentry[5].setAttribute("id", "4");
-            tdentry[5].innerHTML = "<img src='./images/symbol 17.png' class='img'>";
-            tdentry[6].setAttribute("id", "3");
-            tdentry[6].innerHTML = "<img src='./images/symbol 16.png' class='img'>";
+        case 4:     //sequence 4
+            tdentry[0].setAttribute("id", "");                                         //change the id
+            tdentry[0].innerHTML = "<img src='./images/symbol 11.png' class='img'>";   //change the image
+            tdentry[1].setAttribute("id", "correct1");                                         //change the id
+            tdentry[1].innerHTML = "<img src='./images/symbol 14.png' class='img'>";    //change the image
+            tdentry[2].setAttribute("id", "");                                       //change the id
+            tdentry[2].innerHTML = "<img src='./images/symbol 3.png' class='img'>";    //change the image
+            tdentry[3].setAttribute("id", "");                                          //change the id
+            tdentry[3].innerHTML = "<img src='./images/symbol 15.png' class='img'>";      //change the image
+            tdentry[4].setAttribute("id", "2");                                         //change the id
+            tdentry[4].innerHTML = "<img src='./images/symbol 1.png' class='img'>";   //change the image
+            tdentry[5].setAttribute("id", "4");                                       //change the id
+            tdentry[5].innerHTML = "<img src='./images/symbol 17.png' class='img'>";    //change the image
+            tdentry[6].setAttribute("id", "3");                                       //change the id
+            tdentry[6].innerHTML = "<img src='./images/symbol 16.png' class='img'>";    //change the image
             break;
     }
 }
@@ -91,7 +91,7 @@ function clicky(x) {
             document.getElementById("check").innerHTML = "<p>correct</p>";
             document.getElementById("check").setAttribute("id", "pass");
             if(filename == "symbol_puzzle_dif2.html"){
-                document.getElementById("pass").setAttribute("onclick", "javascript:unlockLevelOne('./symbol_puzzle_dif1.html')");
+                document.getElementById("pass").setAttribute("onclick", "javascript:unlockLevelTwo('./symbol_puzzle_dif1.html')");
             }
             x.setAttribute("id", "done4");
             break;
