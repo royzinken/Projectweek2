@@ -48,8 +48,6 @@ var imagePuzzle = {
                     var now = new Date().getTime();
                     if (isSorted(vals)) {
                         alert("Works");
-                        // helper.doc('actualImageBox').style.display = 'none';
-                        // helper.doc('gameOver').style.display = 'block';
                         helper.doc('actualImageBox').innerHTML = helper.doc('gameOver').innerHTML;
                     }
                 }
