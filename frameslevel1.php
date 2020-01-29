@@ -49,4 +49,3 @@ The basic frameset filled with the level 1 components
         <frame name='right-bottom' src='./floorright.html' noresize scrolling='no'>        								<!-- Room: Right bottom frame -->
     </frameset>    
 </frameset>
-
