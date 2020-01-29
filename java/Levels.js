@@ -1,21 +1,18 @@
-function UnlockLevelTwo() {
-    parent.test.location=file;
+function UnlockLevelTwo(file) {
+    parent.center_middle_top.location=file;
 }
 
-function UnlockLevelThree() {
-    parent.test.location=file;
+function UnlockLevelThree(file) {
+    parent.center_middle_bottom.location=file;
 }
 
-function UnlockLevelFour() {
-    parent.test.location=file;
+function UnlockLevelFour(file) {
+    parent.center_right_top.location=file;
 }
 
-function UnlockLevelFive() {
-    parent.test.location=file;
+function UnlockLevelFive(file) {
+    parent.center_right_bottom.location=file;
 }
 
-function UnlockLevelSix() {
-    parent.test.location=file;
-}
 
 

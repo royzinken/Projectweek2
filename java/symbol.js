@@ -1,11 +1,16 @@
 var url = window.location.pathname;     //define the current url
 var filename = url.substring(url.lastIndexOf('/')+1);   
-Audio(src="./audio/countdown_audio")                    
+Audio(src="./audio/countdown_audio");                  
+alert(filename);
 
 function assign() {
-    var randomizer = Math.floor(Math.random() * 4 + 1);     //randomizer 1-4
+    var min=1; 
+    var max=4;  
+    var random = Math.floor(Math.random() * (+max - +min)) + +min;
+
+    // var randomizer = Math.floor(Math.random() * 4) + 1;       //randomizer 1-5
     var tdentry = document.getElementsByTagName("td");     //preset for 'select td'    
-    switch(randomizer) {     //switch gives a random set of images and fitting sequences
+    switch(random) {     //switch gives a random set of images and fitting sequences
         case 1:
             tdentry[0].setAttribute("id", "");
             tdentry[0].innerHTML = "<img src='./images/symbol 15.png' class='img'>";
@@ -90,8 +95,22 @@ function clicky(x) {
         case document.getElementById("correct4"):
             document.getElementById("check").innerHTML = "<p>correct</p>";
             document.getElementById("check").setAttribute("id", "pass");
-            if(filename == "symbol_puzzle_dif2.html"){
-                document.getElementById("pass").setAttribute("onclick", "javascript:unlockLevelOne('./symbol_puzzle_dif1.html')");
+            
+            if (filename == 'symbol_puzzle_dif5.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelTwo('./symbol_puzzle_dif4.html')");
+
+            }
+            else if (filename == 'symbol_puzzle_dif4.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelThree('./symbol_puzzle_dif3.html')");
+
+            }
+            else if (filename == 'symbol_puzzle_dif3.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelFour('./symbol_puzzle_dif2.html')");
+
+            }
+            else if (filename == 'symbol_puzzle_dif2.html') {
+                document.getElementById("pass").setAttribute("onclick", "javascript:UnlockLevelFive('./symbol_puzzle_dif1.html')");
+
             }
             x.setAttribute("id", "done4");
             break;
@@ -103,7 +122,22 @@ function clicky(x) {
             }
             break;
         case document.getElementById("failed"):
-            window.location.replace("./symbol_puzzle_dif2.html");
+            if (filename == 'symbol_puzzle_dif5.html') {
+                window.location.replace("./symbol_puzzle_dif5.html");
+            }
+            else if (filename == 'symbol_puzzle_dif4.html') {
+                window.location.replace("./symbol_puzzle_dif4.html");
+            }
+            else if (filename == 'symbol_puzzle_dif3.html') {
+                window.location.replace("./symbol_puzzle_dif3.html");
+            }
+            else if (filename == 'symbol_puzzle_dif2.html') {
+                window.location.replace("./symbol_puzzle_dif2.html");
+            }
+            else if (filename == 'symbol_puzzle_dif1.html') {
+                window.location.replace("./symbol_puzzle_dif1.html");
+            }
+        
             break;
         default:
             document.getElementById("check").innerHTML = "<p>reset</p>";
