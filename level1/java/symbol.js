@@ -26,37 +26,37 @@ function assign() {                                                             
             tdentry[6].setAttribute("id", "4");                                        //change the id
             tdentry[6].innerHTML = "<img src='./images/symbol 7.png' class='img'>";    //change the image
             break;
-        case 2:     //sequence 2
-            tdentry[0].setAttribute("id", "4");                                        //change the id
-            tdentry[0].innerHTML = "<img src='./images/symbol.png' class='img'>";      //change the image
-            tdentry[1].setAttribute("id", "2");                                        //change the id
-            tdentry[1].innerHTML = "<img src='./images/symbol 4.png' class='img'>";    //change the image
-            tdentry[2].setAttribute("id", "3");                                        //change the id
-            tdentry[2].innerHTML = "<img src='./images/symbol 9.png' class='img'>";    //change the image
-            tdentry[3].setAttribute("id", "");                                         //change the id
-            tdentry[3].innerHTML = "<img src='./images/symbol 7.png' class='img'>";    //change the image
-            tdentry[4].setAttribute("id", "");                                         //change the id
-            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";   //change the image
-            tdentry[5].setAttribute("id", "");                                         //change the id
-            tdentry[5].innerHTML = "<img src='./images/symbol 3.png' class='img'>";    //change the image
-            tdentry[6].setAttribute("id", "correct1");                                 //change the id
-            tdentry[6].innerHTML = "<img src='./images/symbol 2.png' class='img'>";    //change the image
+        case 2:
+            tdentry[0].setAttribute("id", "4");
+            tdentry[0].innerHTML = "<img src='./images/symbol.png' class='img'>";
+            tdentry[1].setAttribute("id", "2");
+            tdentry[1].innerHTML = "<img src='./images/symbol 4.png' class='img'>";
+            tdentry[2].setAttribute("id", "3");
+            tdentry[2].innerHTML = "<img src='./images/symbol 9.png' class='img'>";
+            tdentry[3].setAttribute("id", "");
+            tdentry[3].innerHTML = "<img src='./images/symbol 7.png' class='img'>";
+            tdentry[4].setAttribute("id", "");
+            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";
+            tdentry[5].setAttribute("id", "");
+            tdentry[5].innerHTML = "<img src='./images/symbol 3.png' class='img'>";
+            tdentry[6].setAttribute("id", "correct1");
+            tdentry[6].innerHTML = "<img src='./images/symbol 2.png' class='img'>";
             break;
-        case 3:     //sequence 3
-            tdentry[0].setAttribute("id", "");                                         //change the id
-            tdentry[0].innerHTML = "<img src='./images/symbol 6.png' class='img'>";    //change the image
-            tdentry[1].setAttribute("id", "4");                                        //change the id
-            tdentry[1].innerHTML = "<img src='./images/symbol 1.png' class='img'>";    //change the image
-            tdentry[2].setAttribute("id", "");                                         //change the id
-            tdentry[2].innerHTML = "<img src='./images/symbol 8.png' class='img'>";    //change the image
-            tdentry[3].setAttribute("id", "correct1");                                 //change the id
-            tdentry[3].innerHTML = "<img src='./images/symbol 10.png' class='img'>";   //change the image
-            tdentry[4].setAttribute("id", "3");                                        //change the id
-            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";   //change the image
-            tdentry[5].setAttribute("id", "");                                         //change the id
-            tdentry[5].innerHTML = "<img src='./images/symbol 4.png' class='img'>";    //change the image
-            tdentry[6].setAttribute("id", "2");                                        //change the id
-            tdentry[6].innerHTML = "<img src='./images/symbol 12.png' class='img'>";   //change the image
+        case 3:
+            tdentry[0].setAttribute("id", "");
+            tdentry[0].innerHTML = "<img src='./images/symbol 6.png' class='img'>";
+            tdentry[1].setAttribute("id", "4");
+            tdentry[1].innerHTML = "<img src='./images/symbol 1.png' class='img'>";
+            tdentry[2].setAttribute("id", "");
+            tdentry[2].innerHTML = "<img src='./images/symbol 8.png' class='img'>";
+            tdentry[3].setAttribute("id", "correct1");
+            tdentry[3].innerHTML = "<img src='./images/symbol 10.png' class='img'>";
+            tdentry[4].setAttribute("id", "3");
+            tdentry[4].innerHTML = "<img src='./images/symbol 13.png' class='img'>";
+            tdentry[5].setAttribute("id", "");
+            tdentry[5].innerHTML = "<img src='./images/symbol 4.png' class='img'>";
+            tdentry[6].setAttribute("id", "2");
+            tdentry[6].innerHTML = "<img src='./images/symbol 12.png' class='img'>";
             break;
         case 4:     //sequence 4
             tdentry[0].setAttribute("id", "");                                          //change the id
@@ -145,23 +145,23 @@ function clicky(x) {
             
             if (filename == 'symbol_puzzle_dif5.html') {
                 document.getElementById("pass").setAttribute(
-                    "onclick", "javascript:UnlockLevelTwo('./symbol_puzzle_dif4.html')");
-                // $_session['NumberOfSolvedPuzzles'] + 1;
+                    "onclick", "javascript:UnlockLevelTwo('symbol_puzzle_dif4.html')");
+
             }
             else if (filename == 'symbol_puzzle_dif4.html') {
                 document.getElementById("pass").setAttribute(
-                    "onclick", "javascript:UnlockLevelThree('./symbol_puzzle_dif3.html')");
-                // $_session['NumberOfSolvedPuzzles'] + 1;
+                    "onclick", "javascript:UnlockLevelThree('symbol_puzzle_dif3.html')");
+
             }
             else if (filename == 'symbol_puzzle_dif3.html') {
                 document.getElementById("pass").setAttribute(
-                    "onclick", "javascript:UnlockLevelFour('./symbol_puzzle_dif2.html')");
-                // $_session['NumberOfSolvedPuzzles'] + 1;
+                    "onclick", "javascript:UnlockLevelFour('symbol_puzzle_dif2.html')");
+
             }
             else if (filename == 'symbol_puzzle_dif2.html') {
                 document.getElementById("pass").setAttribute(
-                    "onclick", "javascript:UnlockLevelFive('./symbol_puzzle_dif1.html')");
-                // $_session['NumberOfSolvedPuzzles'] + 1;
+                    "onclick", "javascript:UnlockLevelFive('symbol_puzzle_dif1.html')");
+
             }
             x.setAttribute("id", "done4");
             break;
@@ -169,7 +169,7 @@ function clicky(x) {
             break;
         case document.getElementById("pass"):
             if(filename = "symbol_puzzle_dif1.html"){
-                window.location.replace("./succes.html");
+                window.location.replace("../succes.html");
             }
             break;
         case document.getElementById("failed"):
