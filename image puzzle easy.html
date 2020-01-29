@@ -1,22 +1,21 @@
 ﻿<!DOCTYPE html>
 
-<head>
+<head>   
     <title>Image Puzzle</title>
-    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />   
     <script src="js/image-puzzle.js"></script>
 </head>
 
-<body>
+<body>                                                                        
     <div id="collage">
-        <ul id="sortable" class="sortable"></ul>
+        <ul id="sortable" class="sortable"></ul>  
         <script>
             var images = [
-                 { src: 'images/qutub-minar.jpg', title: 'Qutub Minar' },      
-             ];
+                 { src: 'images/qutub-minar.jpg', title: 'Qutub Minar' },     /* image of the puzzel */ 
+             ]; 
 
             window.onload = function () {
-                //Set moeilijkheids graad.
-                imagePuzzle.startGame(images, 3);
+                imagePuzzle.startGame(images, 3);  /* start puzzel */
             };
         </script>
     </div>
