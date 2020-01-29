@@ -3,16 +3,14 @@
 var imagePuzzle = {
     stepCount: 0,
     startTime: new Date().getTime(),
-    
+   /* this is code for the game to start */ 
     startGame: function (images, gridSize) {
         this.setImage(images, gridSize);
         helper.doc('playPanel').style.display = 'block';
         helper.shuffle('sortable');
-        this.stepCount = 0;
-        this.startTime = new Date().getTime();
-        this.tick();
     },
-    setImage: function (images, gridSize = 4) {
+    /* code for the photos, size and moving the photos */
+    setImage: function (images, gridSize = 4) {  
         var percentage = 100 / (gridSize - 1);
         var image = images[Math.floor(Math.random() * images.length)];
         helper.doc('imgTitle').innerHTML = image.title;
@@ -43,13 +41,6 @@ var imagePuzzle = {
                     let temp = dest.nextSibling;
                     p.insertBefore(dest, origin);
                     p.insertBefore(origin, temp);
-
-                    let vals = Array.from(helper.doc('sortable').children).map(x => x.id);
-                    var now = new Date().getTime();
-                    if (isSorted(vals)) {
-                        alert("Works");
-                        helper.doc('actualImageBox').innerHTML = helper.doc('gameOver').innerHTML;
-                    }
                 }
             };
             li.setAttribute('dragstart', 'true');
