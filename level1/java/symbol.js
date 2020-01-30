@@ -83,15 +83,15 @@ function assign() {                                                             
             tdentry[6].innerHTML = "<img src='./images/symbol 16.png' class='img'>";    //change the image
             break;
         case 5:     //sequence 5
-            tdentry[0].setAttribute("id", "");                                          //change the id
+            tdentry[0].setAttribute("id", "4");                                          //change the id
             tdentry[0].innerHTML = "<img src='./images/symbol.png' class='img'>";       //change the image
             tdentry[1].setAttribute("id", "correct1");                                  //change the id
             tdentry[1].innerHTML = "<img src='./images/symbol 19.png' class='img'>";    //change the image
-            tdentry[2].setAttribute("id", "");                                          //change the id
+            tdentry[2].setAttribute("id", "3");                                          //change the id
             tdentry[2].innerHTML = "<img src='./images/symbol 21.png' class='img'>";     //change the image
             tdentry[3].setAttribute("id", "");                                          //change the id
             tdentry[3].innerHTML = "<img src='./images/symbol 23.png' class='img'>";    //change the image
-            tdentry[4].setAttribute("id", "");                                          //change the id
+            tdentry[4].setAttribute("id", "2");                                          //change the id
             tdentry[4].innerHTML = "<img src='./images/symbol 20.png' class='img'>";     //change the image
             tdentry[5].setAttribute("id", "");                                          //change the id
             tdentry[5].innerHTML = "<img src='./images/symbol 17.png' class='img'>";    //change the image
