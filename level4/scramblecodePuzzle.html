@@ -7,20 +7,21 @@ Date of last moddified: 29-1-2020
 -->
 
 
+
 <html>
 <head>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <style> @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
   </style>
-  <script type="text/javascript" src="../java/Levels.js"></script>
+ <script type="text/javascript" src="../java/Levels.js"></script>
     <link href='../styles/main.css'rel='stylesheet'>
   
 </head>
 <body class='DBMN'><!--body class for pages of Damiën Bück & Maikel Nelis-->
 
     <center>
-        <div class="screen">
+        <div class="screen">    <!--The screen with the question written on it-->
             <br>
             <br>
 
@@ -30,7 +31,7 @@ Date of last moddified: 29-1-2020
     </center>
 
 
-  <section><div><span class="entry"></span></div></section>
+  <section><div><span class="entry"></span></div></section>   <!--Section envelloping the quistions section-->
     <section id="question-one">
 
         <!--SUPERHERO QUESTION + ANSWER-->
@@ -39,12 +40,12 @@ Date of last moddified: 29-1-2020
           <!--QUESTION FORM + BUTTON-->
           <center>
             
-          <input id="cookie" class="superhero" type="text" name="name" /><!--for the inputbox-->
-          <button id="submit" type="submit" onclick="guessAnswer()">Submit</button><!--submit button-->
+          <input id="cookie" class="superhero" type="text" name="name" />     <!--Input for the awnser-->
+          <button id="submit" type="submit" onclick="guessAnswer()">Submit</button>   <!--button to sumbit the awnser-->
         
         </div>
       
-        <!-- ---MESSAGES normally hidden bij JS--- -->
+        <!-- ---MESSAGES--- -->
         <div id="messages">
       
           <div id="correct">
@@ -59,6 +60,7 @@ Date of last moddified: 29-1-2020
       </center>
       </section>
       <script  src="../Javascript/scriptTextQuestions.js">
-      </script><!--link to java file for morse an scramblewords-->  
+      </script><!--link to java file for morse an scramblewords-->   
+      </body>
 </html>
 <!--Source:Bas Mollenaar/Roy Zinken,Piere Reumkens-->
