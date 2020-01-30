@@ -166,9 +166,9 @@ html, body {
 }
 
 #label-computer label {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: absolute;         /*Set position to absolute*/
+  top: 0;                     /*Set top to 0*/
+  left: 0;                    /*Set left to 0*/
   width: 100%;
   height: 100%;
   display: block;
@@ -522,8 +522,8 @@ input[id*='-8-o']:checked ~ #board #tile-8 div::before {
   background: rgba(255,255,255,0.85);     /*Background coloring*/
   position: fixed;                          /*Positioning*/
   top: 0;                                   /*Set top to 0*/
-  left: 0;
-  right: 0; 
+  left: 0;                                  /*Set left to 0*/
+  right: 0;                                 /*Set right to 0*/
   bottom: 0;                                /*Set bottom to 0*/
   display: none;
   z-index: 9;
