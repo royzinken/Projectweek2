@@ -11,7 +11,7 @@ body{
 
 /* Containers for the buttons */
 
-.buttonbox-top{
+.buttonbox_top{
     width: 100%;
     display: flex;
     padding-top: 0%;
@@ -23,7 +23,7 @@ body{
     border: solid transparent;
 }
 
-.buttonbox-bottom{
+.buttonbox_bottom{
     width: 100%;
     display: flex;
     padding-top: 0%;
@@ -35,8 +35,8 @@ body{
     border: solid transparent;
 }
 
-.btn-box-1, .btn-box-2, .btn-box-3, .btn-box-4,
-.btn-box-5, .btn-box-6, .btn-box-7, .btn-box-8{
+.btn_box_1, .btn_box_2, .btn_box_3, .btn_box_4,
+.btn_box_5, .btn_box_6, .btn_box_7, .btn_box_8{
     margin: 0%;
     margin-left: 1.5%;
     margin-right: 1.5%;
@@ -45,42 +45,42 @@ body{
 
 }
 
-.btn-box-1{
+.btn_box_1{
     float: left;
     width: 25%;
 }
 
-.btn-box-2{
+.btn_box_2{
     float: left;
     width: 25%;
 }
 
-.btn-box-3{
+.btn_box_3{
     float: left;
     width: 25%;
 }
 
-.btn-box-4{
+.btn_box_4{
     float: left;
     width: 25%;
 }
 
-.btn-box-5{
+.btn_box_5{
     float: left;
     width: 25%;
 }
 
-.btn-box-6{
+.btn_box_6{
     float: left;
     width: 25%;
 }
 
-.btn-box-7{
+.btn_box_7{
     float: left;
     width: 25%;
 }
 
-.btn-box-8{
+.btn_box_8{
   float: left;
     width: 25%;
 }
@@ -95,7 +95,7 @@ body{
 
 
 
-.btn-text{
+.btn_text{
     background: none;
     font-weight: bolder;
     font-size: 75%;
@@ -104,12 +104,12 @@ body{
     color: transparent;
 }
 
-.btn-nbsp{
+.btn_nbsp{
     font-size: 10%;
     margin: 0%;
 }
 
-.btn-all{
+.btn_all{
     width: 100%;
     border-radius: 50%;
     pointer-events: auto;
@@ -119,55 +119,55 @@ body{
     margin: 2%;
 }
 
-.btn-all:active{
+.btn_all:active{
     transform: translateY(5px);
     box-shadow: 0 0px rgb(8, 8, 8) !important;
     outline: none;
 }
 
-#btn-1{
+#btn_1{
     color: yellow;
     background-color: red;
     box-shadow: -0.5px 5px rgb(148, 0, 0);
 }
 
-#btn-2{
+#btn_2{
     color: green;
     background-color: orange;
     box-shadow: -0.5px 5px rgb(197, 118, 0);
 }
 
-#btn-3{
+#btn_3{
     color: red;
     background-color: yellow;
     box-shadow: -0.5px 5px rgb(149, 160, 0);
 }
 
-#btn-4{
+#btn_4{
     color: purple;
     background-color: green;
     box-shadow: -0.5px 5px rgb(4, 80, 29);
 }
 
-#btn-5{
+#btn_5{
     color: blue;
     background-color: blue;
     box-shadow: -0.5px 5px rgb(7, 0, 102);
 }
 
-#btn-6{
+#btn_6{
     color: deeppink;
     background-color: purple;
     box-shadow: -0.5px 5px rgb(78, 0, 68);
 }
 
-#btn-7{
+#btn_7{
     color: black;
     background-color: hotpink;
     box-shadow: -0.5px 5px rgb(168, 76, 148);
 }
 
-#btn-8{
+#btn_8{
     color: white;
     background-color: rgb(99, 98, 98);
     box-shadow: -0.5px 5px rgb(58, 58, 58);
@@ -216,3 +216,8 @@ body{
     border: solid grey;
 }
 
+
+#btn_1_text{
+    font-size: medium;
+    font-weight: normal;
+}
