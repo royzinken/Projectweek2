@@ -27,7 +27,7 @@
 
 </head>
 
-<body>
+<body id="roy">
 <div id="overlay" onclick="play(), off()"><h2 id="overlay-text">Start Game</h2></div>
 
     <div id="container" onclick='save(); 
