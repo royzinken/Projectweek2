@@ -37,13 +37,6 @@
                     let temp = dest.nextSibling;
                     p.insertBefore(dest, origin);
                     p.insertBefore(origin, temp);
-
-                    let vals = Array.from(helper.doc('sortable').children).map(x => x.id);
-                    var now = new Date().getTime();
-                    if (isSorted(vals)) {
-                        alert("Works");
-                        helper.doc('actualImageBox').innerHTML = helper.doc('gameOver').innerHTML;
-                    }
                 }
             };
             li.setAttribute('dragstart', 'true');     /* code to drag start */ 
