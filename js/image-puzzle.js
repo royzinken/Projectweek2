@@ -42,6 +42,7 @@
                     var now = new Date().getTime();
                     if (isSorted(vals)) {
                         alert("Works");
+                        javascript:UnlockLevelTwo('image puzzle medium.html');
                         helper.doc('actualImageBox').innerHTML = helper.doc('gameOver').innerHTML;
                     }
                 }
