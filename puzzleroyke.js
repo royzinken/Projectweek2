@@ -52,6 +52,20 @@ function setWhite() {
 var computerShuffle = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Grey"].sort(function () {
     return .5 - Math.random();
 });
+function help meee (){
+    x+=1;
+}
+function limitClicks() {
+        
+
+    if(x >= 4){
+        he.innerHTML = x-=4;
+        x+=2
+    }
+    else{
+        alert("You Need 50 To Do That")
+    }
+}
 
 var userChoiceOne = [];
 var x = 0;

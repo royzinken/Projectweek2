@@ -1,8 +1,8 @@
-body{
+body#roy{
     outline: none !important;
 }
 
-#container{
+body#roy #container{
     text-align: center !important;
     width: 100%;
     padding: 2%;
@@ -11,7 +11,7 @@ body{
 
 /* Containers for the buttons */
 
-.buttonbox_top{
+body#roy .buttonbox-top{
     width: 100%;
     display: flex;
     padding-top: 0%;
@@ -23,7 +23,7 @@ body{
     border: solid transparent;
 }
 
-.buttonbox_bottom{
+body#roy .buttonbox-bottom{
     width: 100%;
     display: flex;
     padding-top: 0%;
@@ -35,8 +35,8 @@ body{
     border: solid transparent;
 }
 
-.btn_box_1, .btn_box_2, .btn_box_3, .btn_box_4,
-.btn_box_5, .btn_box_6, .btn_box_7, .btn_box_8{
+body#roy .btn-box-1, body#roy .btn-box-2, body#roy .btn-box-3, body#roy .btn-box-4,
+body#roy .btn-box-5, body#roy .btn-box-6, body#roy .btn-box-7, body#roy .btn-box-8{
     margin: 0%;
     margin-left: 1.5%;
     margin-right: 1.5%;
@@ -45,47 +45,47 @@ body{
 
 }
 
-.btn_box_1{
+body#roy .btn-box-1{
     float: left;
     width: 25%;
 }
 
-.btn_box_2{
+body#roy .btn-box-2{
     float: left;
     width: 25%;
 }
 
-.btn_box_3{
+body#roy .btn-box-3{
     float: left;
     width: 25%;
 }
 
-.btn_box_4{
+body#roy .btn-box-4{
     float: left;
     width: 25%;
 }
 
-.btn_box_5{
+body#roy .btn-box-5{
     float: left;
     width: 25%;
 }
 
-.btn_box_6{
+body#roy .btn-box-6{
     float: left;
     width: 25%;
 }
 
-.btn_box_7{
+body#roy .btn-box-7{
     float: left;
     width: 25%;
 }
 
-.btn_box_8{
+body#roy .btn-box-8{
   float: left;
     width: 25%;
 }
 
-.fix{
+body#roy .fix{
     width: 0%;
     color: transparent;
 }
@@ -95,7 +95,7 @@ body{
 
 
 
-.btn_text{
+body#roy .btn-text{
     background: none;
     font-weight: bolder;
     font-size: 75%;
@@ -104,12 +104,12 @@ body{
     color: transparent;
 }
 
-.btn_nbsp{
+body#roy .btn-nbsp{
     font-size: 10%;
     margin: 0%;
 }
 
-.btn_all{
+body#roy .btn-all{
     width: 100%;
     border-radius: 50%;
     pointer-events: auto;
@@ -119,55 +119,55 @@ body{
     margin: 2%;
 }
 
-.btn_all:active{
+body#roy .btn-all:active{
     transform: translateY(5px);
     box-shadow: 0 0px rgb(8, 8, 8) !important;
     outline: none;
 }
 
-#btn_1{
+body#roy #btn-1{
     color: yellow;
     background-color: red;
     box-shadow: -0.5px 5px rgb(148, 0, 0);
 }
 
-#btn_2{
+body#roy #btn-2{
     color: green;
     background-color: orange;
     box-shadow: -0.5px 5px rgb(197, 118, 0);
 }
 
-#btn_3{
+body#roy #btn-3{
     color: red;
     background-color: yellow;
     box-shadow: -0.5px 5px rgb(149, 160, 0);
 }
 
-#btn_4{
+body#roy #btn-4{
     color: purple;
     background-color: green;
     box-shadow: -0.5px 5px rgb(4, 80, 29);
 }
 
-#btn_5{
+body#roy #btn-5{
     color: blue;
     background-color: blue;
     box-shadow: -0.5px 5px rgb(7, 0, 102);
 }
 
-#btn_6{
+body#roy #btn-6{
     color: deeppink;
     background-color: purple;
     box-shadow: -0.5px 5px rgb(78, 0, 68);
 }
 
-#btn_7{
+body#roy #btn-7{
     color: black;
     background-color: hotpink;
     box-shadow: -0.5px 5px rgb(168, 76, 148);
 }
 
-#btn_8{
+body#roy #btn-8{
     color: white;
     background-color: rgb(99, 98, 98);
     box-shadow: -0.5px 5px rgb(58, 58, 58);
@@ -177,7 +177,7 @@ body{
 
 /* Css related to JS */
 
-#overlay {
+body#roy #overlay {
     position: fixed;
     display: block;
     width: 100%;
@@ -192,7 +192,7 @@ body{
   }
 
 
-#overlay-text{
+body#roy #overlay-text{
     width: 80%;
     margin: auto;
     margin-top: 25%;
@@ -204,7 +204,7 @@ body{
     border: solid grey;
 }
 
-#overlay-text:hover{
+body#roy #overlay-text:hover{
     width: 80%;
     margin: auto;
     margin-top: 25%;

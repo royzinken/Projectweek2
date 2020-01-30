@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<head>   
+    <title>Image Puzzle</title>
+    <link href="styles/main.css" rel="stylesheet" />   
+    <script src="js/image-puzzle.js"></script>
+    <script type="text/javascript" src="../java/Levels.js"></script>
+</head>
+
+<body id="image">                                                                        
+    <div id="collage">
+        <ul id="sortable" class="sortable"></ul>  
+        <script>
+            var images = [
+                 { src: 'images/puzzle_easy.jpg', title: 'Puzzle Easy' },     /* image of the puzzel */ 
+             ]; 
+
+            window.onload = function () {
+                imagePuzzle.startGame(images, 3);  /* Set difficulty puzzle in blocks, for example value 3 means 3 blocks by 3 blocks */
+            };
+        </script>
+    </div>
+</body>
+</html>

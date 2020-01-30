@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+Made by Pierre Reumkens
+Dat of creation: 27-1-2020
+Date of last moddified: 30-1-2020
+-->
+<html>
+    <head>
+        <link href="../styles/main.css" type="text/css" rel="stylesheet">
+        <title>Bomb defusal game</title>
+        <script type="text/javascript" src="./java/symbol.js"></script>        
+    </head>
+    <body background='./images/nopuzzle.png' id="symbols" onload="assign()" onload="answer1(this)">
+        <script type="text/javascript" src="../java/Levels.js"></script>
+        <center>     
+            <table id="inputpad">
+                <tr>                                                                                    <!--row 1-->
+                    <a href="#"><td onclick="clicky(this)"></td></a>                                    <!--entry 1-->
+                    <a href="#"><td onclick="clicky(this)"></td></a>                                    <!--entry 2-->
+                    <a href="#"><td onclick="clicky(this)"></td></a>                                    <!--entry 3-->
+                </tr>
+                <tr>                                                                                    <!--row 2-->
+                    <a href="#"><td onclick="clicky(this)"></td></a>                                    <!--read above comment-->
+                    <a href="#"><td onclick="clicky(this)"></td></a>                                    <!--read above comment-->
+                    <a href="#"><td onclick="clicky(this)"></td></a>                                    <!--read above comment-->
+                </tr>
+                <tr>                                                                                    <!--row 2-->
+                    <a href="#"><td onclick="clicky(this)"></td></a>                                    <!--read above comment-->
+                    <a href="#"><td colspan="2" id="check" onclick="clicky(this)"></td></a>             <!--checks the given solution and resets or unlocks the next puzzle-->
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bomb defusal game</title>
+        <!-- DONT CHANGE ANYTHING -->
+        <script>
+            document.getElementsByTagName("BODY")[0].onload = function() {
+                document.getElementById("playframe").style.width = window.innerWidth;
+                document.getElementById("playframe").style.height = document.outerHeight;
+            };
+            document.getElementsByTagName("BODY")[0].onresize = function() {
+                document.getElementById("playframe").style.width = window.innerWidth;
+                document.getElementById("playframe").style.height = document.outerHeight;
+            };
+        </script>
+        <style>
+            a   {color: black;}
+        </style>
+        <!-- UNTIL HERE -->
+    </head>
+    <body background='./images/metal.jpg' onclick="myFunction()">
+        <iframe src="frameslevel1.php" frameborder="0" id="playframe" style="height: 912px;"></iframe>
+        <audio autoplay loop>
+            <source src="./audio/Countdown_theme.wav" type="audio/wav">
+        </audio>
+    </body>
+</html>

@@ -8,5 +8,369 @@ and open the template in the editor.
     Author     : J. de Klijn
 */
 
+body#symbols {
+    background: rgb(204,204,204);
+    background: -moz-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
+    background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#cccccc",GradientType=1);
+}
+
+body#image body {    /* styling for body */
+    font-family: 'Segoe UI', Calibri, Arial;
+    margin:0;
+}
+
+body#image h2{  /* positioning for h2 */
+    font-weight:normal;
+    text-align:center;
+}
+
+body#image h3{  /* positioning and size for h3  */
+    font-weight:normal;
+    margin:3px 0px;
+    text-align:center;
+}
+
+body#symbols .img {
+    display: block;
+    margin-left: 40%;
+    width: 20%;
+}
+
+/* body#symbols .img:hover {
+    animation: hovering 1s forwards infinite;
+} */
+
+body#symbols td:hover {
+    background: rgb(170,170,170);
+    background: -moz-linear-gradient(122deg, rgb(170,170,170) 0%, rgb(255,255,255), rgb(170,170,170) 100%);
+    background: -webkit-linear-gradient(122deg, rgb(170,170,170) 0%, rgb(255,255,255) 65%, rgb(170,170,170) 100%);
+    background: linear-gradient(122deg, rgb(170,170,170) 0%, rgb(255,255,255) 65%, rgb(170,170,170) 100%);
+}
 
 
+body#symbols td {
+    border: 2px darkgray groove;
+    border-radius: 30px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(122deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 35%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    width: 33.33333%;
+    height: 33.33333%;
+}
+
+body#symbols #inputpad {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border: 4px darkgray groove;
+    border-radius: 15px;
+}
+
+body#symbols #check {
+    border-radius: 40px;
+    background: #333333;
+    background: -moz-linear-gradient(122deg, #333333 0%, #666666, #333333 100%);
+    background: -webkit-linear-gradient(122deg, #333333 0%, #666666 35%, #333333 100%);
+    background: linear-gradient(122deg, #333333 0%, #666666 35%, #333333 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
+}
+
+body#symbols #pass {
+    border-radius: 40px;
+    background: green;
+    background: -moz-linear-gradient(122deg, lime 0%, green, lime 100%);
+    background: -webkit-linear-gradient(122deg, lime 0%, green 35%, lime 100%);
+    background: linear-gradient(122deg, lime 0%, green 35%, lime 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="lime",endColorstr="lime",GradientType=1);
+}
+
+body#symbols #failed {
+    border-radius: 40px;
+    background: lime;
+    background: -moz-linear-gradient(122deg, red 0%, darkred, red 100%);
+    background: -webkit-linear-gradient(122deg, red 0%, darkred 35%, red 100%);
+    background: linear-gradient(122deg, red 0%, darkred 35%, red 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="red",endColorstr="red",GradientType=1);
+}
+/*---------------------------------------------------------------------------DBMN------------------------------------------------*/   
+body#image #collage #sortable {
+    margin-top: 0;
+    margin-right: 0;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    width: 320px;
+}
+
+body#image #collage #sortable li {
+    cursor: pointer;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------------------------------DBMN--------------------------------------------------*/
+.DBMN{/*body styling for te DBMN pages*/
+    padding-top: 35vh;
+    background: gray;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;/*font used (https://fonts.google.com/specimen/Press+Start+2P)*/
+}
+
+  
+
+  /*The surface with the question written on it*/
+  .DBMN .screen {
+    display: block;
+    width: 50%;
+    height: 100px;
+    padding: 5px;   
+    background-color: rgb(13, 82, 41);
+    border-style: solid;
+    border-color: rgb(197, 197, 197);
+    border-width: 20px;
+    border-radius: 10%;
+
+  }
+
+  /*---------------------------------------------------end of css for DBMN---------------------------------------------- */
+#collage #sortable {
+    margin-top: 0;
+    margin-right: 0;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    width: 320px;
+}
+
+    #collage #sortable li {
+        cursor: pointer;
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    body#roy{
+        outline: none !important;
+    }
+    
+    body#roy #container{
+        text-align: center !important;
+        width: 100%;
+        padding: 2%;
+        
+    }
+    
+    /* Containers for the buttons */
+    
+    body#roy .buttonbox-top{
+        width: 100%;
+        display: flex;
+        padding-top: 0%;
+        margin-top: 5%;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+        align-items: center;
+        justify-content: center;
+        border: solid transparent;
+    }
+    
+    body#roy .buttonbox-bottom{
+        width: 100%;
+        display: flex;
+        padding-top: 0%;
+        margin-top: 0%;
+        padding-bottom: 25%;
+        margin-bottom: 25%;
+        align-items: center;
+        justify-content: center;
+        border: solid transparent;
+    }
+    
+    body#roy .btn-box-1, body#roy .btn-box-2, body#roy .btn-box-3, body#roy .btn-box-4,
+    body#roy .btn-box-5, body#roy .btn-box-6, body#roy .btn-box-7, body#roy .btn-box-8{
+        margin: 0%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        border-radius: 50%;
+        outline: none;
+    
+    }
+    
+    body#roy .btn-box-1{
+        float: left;
+        width: 25%;
+    }
+    
+    body#roy .btn-box-2{
+        float: left;
+        width: 25%;
+    }
+    
+    body#roy .btn-box-3{
+        float: left;
+        width: 25%;
+    }
+    
+    body#roy .btn-box-4{
+        float: left;
+        width: 25%;
+    }
+    
+    body#roy .btn-box-5{
+        float: left;
+        width: 25%;
+    }
+    
+    body#roy .btn-box-6{
+        float: left;
+        width: 25%;
+    }
+    
+    body#roy .btn-box-7{
+        float: left;
+        width: 25%;
+    }
+    
+    body#roy .btn-box-8{
+      float: left;
+        width: 25%;
+    }
+    
+    body#roy .fix{
+        width: 0%;
+        color: transparent;
+    }
+    
+    
+    /* Button styling */
+    
+    
+    
+    body#roy .btn-text{
+        background: none;
+        font-weight: bolder;
+        font-size: 75%;
+        text-align: center;
+        outline: none !important;
+        color: transparent;
+    }
+    
+    body#roy .btn-nbsp{
+        font-size: 10%;
+        margin: 0%;
+    }
+    
+    body#roy .btn-all{
+        width: 100%;
+        border-radius: 50%;
+        pointer-events: auto;
+        border: blue;
+        outline: none !important;
+        padding: auto;
+        margin: 2%;
+    }
+    
+    body#roy .btn-all:active{
+        transform: translateY(5px);
+        box-shadow: 0 0px rgb(8, 8, 8) !important;
+        outline: none;
+    }
+    
+    body#roy #btn-1{
+        color: yellow;
+        background-color: red;
+        box-shadow: -0.5px 5px rgb(148, 0, 0);
+    }
+    
+    body#roy #btn-2{
+        color: green;
+        background-color: orange;
+        box-shadow: -0.5px 5px rgb(197, 118, 0);
+    }
+    
+    body#roy #btn-3{
+        color: red;
+        background-color: yellow;
+        box-shadow: -0.5px 5px rgb(149, 160, 0);
+    }
+    
+    body#roy #btn-4{
+        color: purple;
+        background-color: green;
+        box-shadow: -0.5px 5px rgb(4, 80, 29);
+    }
+    
+    body#roy #btn-5{
+        color: blue;
+        background-color: blue;
+        box-shadow: -0.5px 5px rgb(7, 0, 102);
+    }
+    
+    body#roy #btn-6{
+        color: deeppink;
+        background-color: purple;
+        box-shadow: -0.5px 5px rgb(78, 0, 68);
+    }
+    
+    body#roy #btn-7{
+        color: black;
+        background-color: hotpink;
+        box-shadow: -0.5px 5px rgb(168, 76, 148);
+    }
+    
+    body#roy #btn-8{
+        color: white;
+        background-color: rgb(99, 98, 98);
+        box-shadow: -0.5px 5px rgb(58, 58, 58);
+    }
+    
+    
+    
+    /* Css related to JS */
+    
+    body#roy #overlay {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(78, 78, 78, 0.975);
+        z-index: 2;
+        cursor: pointer;
+      }
+    
+    
+    body#roy #overlay-text{
+        width: 80%;
+        margin: auto;
+        margin-top: 25%;
+        padding: 5%;
+        text-align: center;
+        background-color: darkslateblue;
+        color: rgb(255, 208, 0);
+        border-radius: 25%;
+        border: solid grey;
+    }
+    
+    body#roy #overlay-text:hover{
+        width: 80%;
+        margin: auto;
+        margin-top: 25%;
+        padding: 5%;
+        text-align: center;
+        background-color: rgb(90, 78, 170);
+        color: rgb(255, 208, 0);
+        border-radius: 25%;
+        border: solid grey;
+    }
+    
+    
