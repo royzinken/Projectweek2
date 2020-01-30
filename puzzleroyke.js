@@ -41,15 +41,15 @@ function help meee (){
     x+=1;
 }
 function limitClicks() {
-    
+        
 
-if(x >= 4){
-    he.innerHTML = x-=4;
-    x+=2
-}
-else{
-    alert("You Need 50 To Do That")
-}
+    if(x >= 4){
+        he.innerHTML = x-=4;
+        x+=2
+    }
+    else{
+        alert("You Need 50 To Do That")
+    }
 }
 
 
