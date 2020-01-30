@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="/styles/puzzleroyke.css">
@@ -24,12 +24,15 @@
 
     <!-- Title -->
     <title>Memory puzzle</title>
+
 </head>
 
 <body>
+<div id="overlay" onclick="play(), off()"><h2 id="overlay-text">Start Game</h2></div>
 
-    <div class="container embed-responsive">
-
+    <div id="container" onclick='save(); 
+                this.onclick = null; 
+                    this.setAttribute("style", "color: #ccc");'>
         <div class="buttonbox-top">
 
             <!--    
@@ -39,10 +42,9 @@
                 -->
 
             <div class="btn-box-1">
-                <button class="btn-all btn-1" type="button">
-
+                <button id="btn-1" class="btn-all" type="button" onclick="btn_1()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">Green&nbsp;</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
@@ -52,9 +54,9 @@
                     0000 
                 -->
             <div class="btn-box-2">
-                <button class="btn-all btn-2" type="button">
+                <button id="btn-2" class="btn-all" type="button" onclick="btn_2()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;Black&nbsp;</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
@@ -64,9 +66,9 @@
                     0000 
                 -->
             <div class="btn-box-3">
-                <button class="btn-all btn-3" type="button">
+                <button id="btn-3" class="btn-all" type="button" onclick="btn_3()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">Yellow</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
@@ -76,14 +78,14 @@
                     0000 
                 -->
             <div class="btn-box-4">
-                <button class="btn-all btn-4" type="button">
+                <button id="btn-4" class="btn-all" type="button" onclick="btn_4()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;Blue&nbsp;</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
         </div>
-        <br>
+        
         <div class="buttonbox-bottom">
             <!--   
                     button location 
@@ -91,9 +93,9 @@
                     x000 
                 -->
             <div class="btn-box-5">
-                <button class="btn-all btn-5" type="button">
+                <button id="btn-5" class="btn-all" type="button" onclick="btn_5()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">White</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
@@ -103,9 +105,9 @@
                     0x00 
                 -->
             <div class="btn-box-6">
-                <button class="btn-all btn-6" type="button">
+                <button id="btn-6" class="btn-all" type="button" onclick="btn_6()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;Red&nbsp;&nbsp;</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
@@ -115,9 +117,9 @@
                     00x0 
                 -->
             <div class="btn-box-7">
-                <button class="btn-all btn-7" type="button">
+                <button id="btn-7" class="btn-all" type="button" onclick="btn_7()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">Brown</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
@@ -127,9 +129,9 @@
                     000x
                 -->
             <div class="btn-box-8">
-                <button class="btn-all btn-8" type="button">
+                <button id="btn-8" class="btn-all" type="button" onclick="btn_8()">
                     <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;Grey&nbsp;</h1>
+                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
                     <h1 class="btn-nbsp">&nbsp;</h1>
                 </button>
             </div>
@@ -140,8 +142,8 @@
     </div>
 
 
-    <script src="./puzzleroyke.js"></script>
 
+    <script src="/puzzleroyke.js"></script>
 </body>
 
 </html>
