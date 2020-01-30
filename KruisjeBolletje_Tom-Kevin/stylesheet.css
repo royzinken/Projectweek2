@@ -95,13 +95,13 @@ h1 {
 h2 {
   font-size: 0.9rem;
   text-transform: uppercase;
-  margin: 1.25rem 0 0.1rem 0;
-  color: #a60011;
+  margin: 1.25rem 0 0.1rem 0;               /*Margin*/
+  color: #a60011;                         /*Coloring*/
 }
 
 html, body {
   font-family: Mandali, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 16px;                          /*Font size*/
 }
 
 .center {
