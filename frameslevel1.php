@@ -33,6 +33,12 @@ The basic frameset filled with the level 1 components
                 <frameset rows='50%,50%' border='10'>
                     <frame id='center_middle_top' name='center_middle_top' src='./nopuzzleframe.html' noresize scrolling='no'>					<!-- Casing: center top / puzzle game 2 -->
                     <frame id='center_middle_bottom' name='center_middle_bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: center bottom / puzzle frame 3 -->
+                    <!-- <frame name='center-left-top' src='./countdown.php' noresize scrolling='no'>					Casing: upper left corner / timer frame -->
+                    <frame name='center-left-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: lower left corner / puzzle game 1 -->
+                </frameset>
+                <frameset rows='50%,50%' border='10'>
+                    <frame name='center-middle-top' src='./puzzleroyke.php' noresize scrolling='no'>					<!-- Casing: center top / puzzle game 2 -->
+                    <frame name='center-middle-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: center bottom / puzzle frame 3 -->
                 </frameset>
                 <frameset rows='50%,50%' border='10'>
                     <frame name='center_right_top' src='./nopuzzleframe.html' noresize scrolling='no'>					<!-- Casing: upper right corner / puzzle frame 4 -->
