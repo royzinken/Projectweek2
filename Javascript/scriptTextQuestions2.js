@@ -14,6 +14,8 @@ function guessAnswer () {
      // window.location.href = "../succes.html";
      document.getElementById("submit").setAttribute(
       "onclick", "javascript:UnlockLevelTwo('scramblecodepuzzle.html')");
+     document.getElementById("submit").setAttribute(
+      "type", "");
   document.getElementById("submit").innerText = "continue";
       
   //IF WRONG ANSWER

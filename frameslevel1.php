@@ -37,7 +37,7 @@ The basic frameset filled with the level 1 components
                     <frame name='center-left-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: lower left corner / puzzle game 1 -->
                 </frameset>
                 <frameset rows='50%,50%' border='10'>
-                    <frame name='center-middle-top' src='./puzzleroyke.php' noresize scrolling='no'>					<!-- Casing: center top / puzzle game 2 -->
+                    <frame name='center-middle-top' src='./nopuzzleframe.html' noresize scrolling='no'>					<!-- Casing: center top / puzzle game 2 -->
                     <frame name='center-middle-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: center bottom / puzzle frame 3 -->
                 </frameset>
                 <frameset rows='50%,50%' border='10'>
