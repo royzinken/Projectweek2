@@ -1,4 +1,4 @@
-// this javascript if for morsecodePuzzle.html
+// this javascript if for scramblePuzzle.html
   // DEFAULT SETTINGS
   $('#wrong').hide();
   $('#correct').hide();
@@ -11,8 +11,8 @@ function guessAnswer () {
 		if (answer == 'Why are you running') {
       $('#correct').show();
       $('#wrong').hide();
-     window.location.href = "../succes.html";
-      
+      window.location.href = "../succes.html";
+    
   //IF WRONG ANSWER
       } else {
           $('#wrong').show();
@@ -22,3 +22,4 @@ function guessAnswer () {
           
 
 }
+//Source:Bas Mollenaar/Roy Zinken,Piere Reumkens-->
