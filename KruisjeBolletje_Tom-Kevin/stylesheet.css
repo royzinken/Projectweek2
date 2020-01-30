@@ -577,7 +577,7 @@ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ 
 #cell-2-x:checked ~ #cell-5-x:checked ~ #cell-8-x:checked ~ #end #message::before,
 #cell-0-x:checked ~ #cell-4-x:checked ~ #cell-8-x:checked ~ #end #message::before,
 #cell-2-x:checked ~ #cell-4-x:checked ~ #cell-6-x:checked ~ #end #message::before {
-  content: "Player won!<br>...<br>naah<br>JK";
+  content: "Player won!";
 }
 
 #cell-0-o:checked ~ #cell-1-o:checked ~ #cell-2-o:checked ~ #end #message::before,
