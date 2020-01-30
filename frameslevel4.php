@@ -1,7 +1,7 @@
 <?php
 session_start();
 //Set the countdown timer start time in seconds
-$_SESSION['clock'] = 65;
+$_SESSION['clock'] = 85;
 // Set the number of puzzles to solve (1 _ 6)
 $_SESSION['NumberOfPuzzles'] = 1;
 // Number of puzzles solved (always 0)
