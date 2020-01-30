@@ -120,15 +120,15 @@ html, body {
 }
 
 .tile {
-  margin: 5%;
-  position: relative;
+  margin: 5%;                             /*Margin*/
+  position: relative;                     /*Positioning*/
 }
 
 .tile label,
 .tile div {
-  display: block;
-  height: 100%;
-  width: 100%;
+  display: block;                         /*Display block*/
+  height: 100%;                           /*Height*/
+  width: 100%;                            /*Width*/
   position: absolute;
   top: 0;
   left: 0;
