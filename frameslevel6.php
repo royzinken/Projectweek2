@@ -28,8 +28,8 @@ The basic frameset filled with the level 1 components
             <frameset cols='3%,31%,*,31%,3%' border='10'>																
                 <frame name='casing-left' src='./casingborder.html' noresize scrolling='no'>							<!-- Casing: border leftside -->
                 <frameset rows='50%,50%' border='10'>
-                    <frame name='center-right-top' src='./4WiredModule.html' noresize scrolling='no'>					<!-- Casing: upper right corner / puzzle frame 4 -->
-                    <frame name='center-right-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: lower right corner / puzzle frame 5 -->
+                    <frame name='center-right-top' src='./countdown.php' noresize scrolling='no'>					<!-- Casing: upper right corner / puzzle frame 4 -->
+                    <frame name='center-right-bottom' src='./KruisjeBolletje_Tom-Kevin\index.html' noresize scrolling='no'>				<!-- Casing: lower right corner / puzzle frame 5 -->
                 </frameset>
                 <frameset rows='50%,50%' border='10'>
                     <frame name='center-middle-top' src='./nopuzzleframe.html' noresize scrolling='no'>					<!-- Casing: center top / puzzle game 2 -->

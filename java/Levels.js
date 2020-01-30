@@ -14,5 +14,5 @@ function UnlockLevelFive(file) {
     parent.center_right_bottom.location=file;
 }
 
-
+document.getElementById("6_wires_frame_1_next").onclick = function() {UnlockLevelTwo('6Wired_v3_jari_runa.html')};
 

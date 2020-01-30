@@ -36,7 +36,7 @@ The basic frameset filled with the level 1 components
                     <frame name='center-middle-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: center bottom / puzzle frame 3 -->
                 </frameset>
                 <frameset rows='50%,50%' border='10'>
-                    <frame name='center-right-top' src='./nopuzzleframe.html' noresize scrolling='no'>					<!-- Casing: upper right corner / puzzle frame 4 -->
+                    <frame name='center-right-top' src='./4WiredModule.html' noresize scrolling='no'>					<!-- Casing: upper right corner / puzzle frame 4 -->
                     <frame name='center-right-bottom' src='./nopuzzleframe.html' noresize scrolling='no'>				<!-- Casing: lower right corner / puzzle frame 5 -->
                 </frameset>
                 <frame name='casing-rigth' src='./casingborder.html' noresize scrolling='no'>							<!-- Casing: border right -->
