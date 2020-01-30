@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--
+Made by maikel Nelis
+Dat of creation: 27-1-2020
+Date of last moddified: 29-1-2020
+-->
+
+
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <style> @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+  </style>
+    <link href='./styles/main.css'rel='stylesheet'>
+  
+</head>
+<body class='DBMN'><!--body class for pages of Damiën Bück & Maikel Nelis-->
+
+    <center>
+        <div class="screen">
+            <br>
+            <br>
+
+            <a>Num ojt mxa jaqqzqe</a><!--the scamble puzzel-->
+            
+        </div>
+    </center>
+
+
+  <section><div><span class="entry"></span></div></section>
+    <section id="question-one">
+
+        <!--SUPERHERO QUESTION + ANSWER-->
+        <div class="question">
+      
+          <!--QUESTION FORM + BUTTON-->
+          <center>
+            
+          <input id="cookie" class="superhero" type="text" name="name" /><!--for the inputbox-->
+          <button id="submit" type="submit" onclick="guessAnswer()">Submit</button><!--submit button-->
+        
+        </div>
+      
+        <!-- ---MESSAGES normally hidden bij JS--- -->
+        <div id="messages">
+      
+          <div id="correct">
+            <h5> CORRECT! </h5>
+          </div>
+      
+          <div id="wrong">
+            <h5> NOPE! TRY AGAIN </h5>
+          </div>
+        
+        </div>
+      </center>
+      </section>
+      <script  src="Javascript/scriptTextQuestions.js"></script><!--link to java file for morse an scramblewords-->   
+      </body>
+</html>

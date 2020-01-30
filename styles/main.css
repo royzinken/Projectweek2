@@ -7,6 +7,7 @@ and open the template in the editor.
     Created on : 29-jan-2017, 12:02:57
     Author     : J. de Klijn
 */
+/*-------------------------------------------------DBMN--------------------------------------------------*/
 
 body#symbols {
     background: rgb(204,204,204);
@@ -110,3 +111,32 @@ body#image #collage #sortable li {
     width: 100%;
     height: 100%;
 }
+.DBMN{/*body styling for te DBMN pages*/
+    padding-top: 35vh;
+    background: gray;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;/*font used (https://fonts.google.com/specimen/Press+Start+2P)*/
+
+  }
+
+   
+  /*The surface with the question written on it*/
+.DBMN .screen {
+    display: block;
+    width: 50%;
+    height: 100px;
+    padding: 5px;   
+    background-color: rgb(13, 82, 41);
+    border-style: solid;
+    border-color: rgb(197, 197, 197);
+    border-width: 20px;
+    border-radius: 10%;
+
+  }
+
+  
+
+
+ 
+  
+  /*---------------------------------------------------end of css for DBMN---------------------------------------------- */
