@@ -216,3 +216,8 @@ body#roy #overlay-text:hover{
     border: solid grey;
 }
 
+
+#btn_1_text{
+    font-size: medium;
+    font-weight: normal;
+}

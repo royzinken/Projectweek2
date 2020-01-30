@@ -1,27 +1,46 @@
 function play() {
-    setTimeout(setGreen, 1000)
-    setTimeout(setRed, 2000)
-    setTimeout(setBlue, 3000)
-    setTimeout(setOrange, 4000)
-    setTimeout(setWhite, 5000)
-    document.getElementById("container").style.backgroundImage = "whitesmoke";
 
+    setTimeout(setcolor0, 1000)
+    setTimeout(setcolor1, 2500)
+    setTimeout(setcolor2, 4000)
+    setTimeout(setcolor3, 5500)
+    setTimeout(setcolor4, 7000)
+    setTimeout(setcolor5, 8500)
+    setTimeout(setcolor6, 9000)
+    setTimeout(setcolor7, 15000)
+    setTimeout(setWhite,  20000)
 }
 
-function setGreen() {
-    document.getElementById("container").style.backgroundColor = "green";
+function setcolor0() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[0]);
 }
 
-function setRed() {
-    document.getElementById("container").style.backgroundColor = "red";
+function setcolor1() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[1]);
 }
 
-function setBlue() {
-    document.getElementById("container").style.backgroundColor = "blue";
+function setcolor2() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[2]);
 }
 
-function setOrange() {
-    document.getElementById("container").style.backgroundColor = "orange";
+function setcolor3() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[3]);
+}
+
+function setcolor4() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[4]);
+}
+
+function setcolor5() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[5]);
+}
+
+function setcolor6() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[6]);
+}
+
+function setcolor7() {
+    document.getElementById("container").style.backgroundColor = (computerShuffle[7]);
 }
 
 function setWhite() {
@@ -30,61 +49,124 @@ function setWhite() {
 
 
 
+var computerShuffle = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Grey"].sort(function () {
+    return .5 - Math.random();
+});
 
-var devChoiceOne = ["Blue", "Orange", "Green", "Purple", "Grey"];
 var userChoiceOne = [];
-var awnsersOne = x = 0;
-
-
-
-function help meee (){
-    x+=1;
-}
-function limitClicks() {
-        
-
-    if(x >= 4){
-        he.innerHTML = x-=4;
-        x+=2
-    }
-    else{
-        alert("You Need 50 To Do That")
-    }
-}
-
+var x = 0;
 
 
 function btn_1() {
     userChoiceOne.push("Red");
-    document.getElementById("hello").innerHTML = x++;
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 function btn_2() {
-    userChoiceOne.push("Orange");
+    userChoiceOne.push(" Orange");
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 function btn_3() {
-    userChoiceOne.push("Yellow");
+    userChoiceOne.push(" Yellow");
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 function btn_4() {
-    userChoiceOne.push("Green");
+    userChoiceOne.push(" Green");
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 function btn_5() {
-    userChoiceOne.push("Blue");
+    userChoiceOne.push(" Blue");
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 function btn_6() {
-    userChoiceOne.push("Purple");
+    userChoiceOne.push(" Purple");
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 function btn_7() {
-    userChoiceOne.push("Pink");
+    userChoiceOne.push(" Pink");
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 function btn_8() {
-    userChoiceOne.push("Grey");
+    userChoiceOne.push(" Grey");
+    if (x <= 7) {
+        x++;
+        console.log(userChoiceOne + (" ") + x);
+    } else {
+        if (computerShuffle === userChoiceOne) {
+            console.log("luck");
+        } else {
+            console.log("fail")
+        }
+    }
 }
 
 
@@ -94,7 +176,9 @@ function btn_8() {
 
 
 
-  
-  function off() {
+
+function off() {
+    console.log(computerShuffle)
+
     document.getElementById("overlay").style.display = "none";
-  }
+}

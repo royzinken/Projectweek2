@@ -30,10 +30,8 @@
 <body id="roy">
 <div id="overlay" onclick="play(), off()"><h2 id="overlay-text">Start Game</h2></div>
 
-    <div id="container" onclick='save(); 
-                this.onclick = null; 
-                    this.setAttribute("style", "color: #ccc");'>
-        <div class="buttonbox-top">
+    <div id="container">
+        <div class="buttonbox_top">
 
             <!--    
                     button location
@@ -41,11 +39,11 @@
                     0000 
                 -->
 
-            <div class="btn-box-1">
-                <button id="btn-1" class="btn-all" type="button" onclick="btn_1()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_1">
+                <button id="btn_1" class="btn_all" type="button" onclick="btn_1()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
             <!--   
@@ -53,11 +51,11 @@
                     0x00
                     0000 
                 -->
-            <div class="btn-box-2">
-                <button id="btn-2" class="btn-all" type="button" onclick="btn_2()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_2">
+                <button id="btn_2" class="btn_all" type="button" onclick="btn_2()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
             <!-- 
@@ -65,11 +63,11 @@
                     00x0
                     0000 
                 -->
-            <div class="btn-box-3">
-                <button id="btn-3" class="btn-all" type="button" onclick="btn_3()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_3">
+                <button id="btn_3" class="btn_all" type="button" onclick="btn_3()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
             <!--   
@@ -77,26 +75,26 @@
                     000x
                     0000 
                 -->
-            <div class="btn-box-4">
-                <button id="btn-4" class="btn-all" type="button" onclick="btn_4()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_4">
+                <button id="btn_4" class="btn_all" type="button" onclick="btn_4()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
         </div>
         
-        <div class="buttonbox-bottom">
+        <div class="buttonbox_bottom">
             <!--   
                     button location 
                     0000
                     x000 
                 -->
-            <div class="btn-box-5">
-                <button id="btn-5" class="btn-all" type="button" onclick="btn_5()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_5">
+                <button id="btn_5" class="btn_all" type="button" onclick="btn_5()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
             <!--    
@@ -104,11 +102,11 @@
                     0000
                     0x00 
                 -->
-            <div class="btn-box-6">
-                <button id="btn-6" class="btn-all" type="button" onclick="btn_6()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_6">
+                <button id="btn_6" class="btn_all" type="button" onclick="btn_6()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
             <!--    
@@ -116,11 +114,11 @@
                     0000
                     00x0 
                 -->
-            <div class="btn-box-7">
-                <button id="btn-7" class="btn-all" type="button" onclick="btn_7()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_7">
+                <button id="btn_7" class="btn_all" type="button" onclick="btn_7()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
             <!--    
@@ -128,11 +126,11 @@
                     0000
                     000x
                 -->
-            <div class="btn-box-8">
-                <button id="btn-8" class="btn-all" type="button" onclick="btn_8()">
-                    <h1 class="btn-nbsp">&nbsp;</h1>
-                    <h1 class="btn-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                    <h1 class="btn-nbsp">&nbsp;</h1>
+            <div class="btn_box_8">
+                <button id="btn_8" class="btn_all" type="button" onclick="btn_8()">
+                    <h1 class="btn_nbsp">&nbsp;</h1>
+                    <h1 class="btn_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    <h1 class="btn_nbsp">&nbsp;</h1>
                 </button>
             </div>
 
