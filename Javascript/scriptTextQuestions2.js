@@ -12,6 +12,9 @@ function guessAnswer () {
       $('#correct').show();
       $('#wrong').hide();
      // window.location.href = "../succes.html";
+     document.getElementById("submit").setAttribute(
+      "onclick", "javascript:UnlockLevelTwo('scramblecodepuzzle.html')");
+  document.getElementById("submit").innerText = "continue";
       
   //IF WRONG ANSWER
       } else {

@@ -7,15 +7,14 @@ and open the template in the editor.
     Created on : 29-jan-2017, 12:02:57
     Author     : J. de Klijn
 */
-/*-------------------------------------------------DBMN--------------------------------------------------*/
 
 body#symbols {
     background: rgb(204,204,204);
     background: -moz-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
     background: linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 35%, rgba(204,204,204,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#cccccc",GradientType=1);
-body {    /* styling for body */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#cccccc",GradientType=1);}
+.body {    /* styling for body */
     font-family: 'Segoe UI', Calibri, Arial;
     margin:0;
 }
@@ -95,6 +94,7 @@ body#symbols #failed {
     background: linear-gradient(122deg, red 0%, darkred 35%, red 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="red",endColorstr="red",GradientType=1);
 }
+/*---------------------------------------------------------------------------DBMN------------------------------------------------*/   
 .DBMN{/*body styling for te DBMN pages*/
     padding-top: 35vh;
     background: gray;
@@ -103,9 +103,8 @@ body#symbols #failed {
 
   }
 
-/*---------------------------------------------------------------------------DBMN------------------------------------------------*/   
   /*The surface with the question written on it*/
-  .screen {
+  .DBMN.screen {
     display: block;
     width: 50%;
     height: 100px;
@@ -140,4 +139,3 @@ body#symbols #failed {
         height: 100%;
     }
 
-*/
