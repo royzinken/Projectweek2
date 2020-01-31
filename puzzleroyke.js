@@ -8,7 +8,7 @@ function play() {
     setTimeout(setcolor5, 8500)
     setTimeout(setcolor6, 9000)
     setTimeout(setcolor7, 15000)
-    setTimeout(setWhite,  20000)
+    setTimeout(setWhite, 20000)
 }
 
 function setcolor0() {
@@ -52,43 +52,33 @@ function setWhite() {
 var computerShuffle = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Pink", "Grey"].sort(function () {
     return .5 - Math.random();
 });
-function help meee (){
-    x+=1;
-}
-function limitClicks() {
-        
 
-    if(x >= 4){
-        he.innerHTML = x-=4;
-        x+=2
-    }
-    else{
-        alert("You Need 50 To Do That")
-    }
-}
-
-var userChoiceOne = [];
+var userChoiceOne = [""]
 var x = 0;
 
 
 function btn_1() {
-    userChoiceOne.push("Red");
-    if (x <= 7) {
-        x++;
-        console.log(userChoiceOne + (" ") + x);
-    } else {
-        if (computerShuffle === userChoiceOne) {
-            console.log("luck");
+    userChoiceOne.push(color , String["Red"]);
+    
+    while (x < 7) {
+        if (userChoiceOne === computerShuffle) {
+            text = 'won'
         } else {
-            console.log("fail")
+            text = 'lost'
+        }
+        if (x > 7) {
+        break
+            
         }
     }
 }
 
+
+
 function btn_2() {
     userChoiceOne.push(" Orange");
     if (x <= 7) {
-        x++;
+        x++; 
         console.log(userChoiceOne + (" ") + x);
     } else {
         if (computerShuffle === userChoiceOne) {
